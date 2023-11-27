@@ -2,21 +2,24 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const username: string = "agoodbook";
+const repo: string = "agoodbook.github.io";
+
 const config: Config = {
-  title: 'Taro 文档', // 站点名称
-  tagline: '开放式跨端跨框架解决方案',  // slogan，标语
+  title: 'AGoodBook', // 站点名称
+  tagline: '书山有路勤为径，学海无涯苦作舟',  // slogan，标语
     favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  // 配置网站站点url
+  url: 'https://agoodbook.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'agoodbook', // Usually your GitHub org/user name.
-  projectName: 'agoodbook.github.io', // Usually your repo name.
+  // GitHub部署配置
+  organizationName: 'agoodbook', // 用户名
+  projectName: 'agoodbook.github.io', // 仓库名
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -50,14 +53,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            `https://github.com/${username}/${repo}/tree/main/packages/create-docusaurus/templates/shared/`,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -83,12 +79,12 @@ const config: Config = {
       },
       items: [
         {
-          to: 'docs/',                // 点击后跳转的链接，站内跳转用 to ,站外用 href
-          activeBasePath: 'docs',     // 根据它显示当前高亮
-          label: '文档',               // 显示的名称
-          position: 'left',           // 显示在导航的 左边 还是 右边
+          type: 'doc',
+          docId: 'started',
+          position: 'left',
+          label: '文档'
         },
-        //   right
+        // 导航栏右侧项
         {
           type: 'localeDropdown',
           position: 'right',
@@ -98,13 +94,13 @@ const config: Config = {
               value: '<hr style="margin: 0.3rem 0;">',
             },
             {
-              href: 'https://github.com/facebook/docusaurus/issues/3526',
+              href: `https://github.com/${username}/${repo}/issues/3526`,
               label: '帮助我们翻译',
             },
           ],
         },
         {
-          href: 'https://github.com',
+          href: `https://github.com/${username}/${repo}`,
           label: 'GitHub',
           position: 'right',
         },
@@ -119,6 +115,13 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    themes: ['@docusaurus/theme-search-algolia'],
+    algolia: {
+      appId: 'X1Z85QJPUV',
+      apiKey: 'bf7211c161e8205da2f933a02534105a',
+      indexName: 'docusaurus-2',
+      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };

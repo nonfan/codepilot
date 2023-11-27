@@ -21,3 +21,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.icon {
+  transform: rotate(45deg);
+  margin-left: 10px;
+}
