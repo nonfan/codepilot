@@ -53,7 +53,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            `https://github.com/${username}/${repo}/tree/main/packages/create-docusaurus/templates/shared/`,
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,12 +86,12 @@ const config: Config = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'started',
-          position: 'left',
-          label: '文档'
+          to: 'docs/',                // 点击后跳转的链接，站内跳转用 to ,站外用 href
+          activeBasePath: 'docs',     // 根据它显示当前高亮
+          label: '文档',               // 显示的名称
+          position: 'left',           // 显示在导航的 左边 还是 右边
         },
-        // 导航栏右侧项
+        //   right
         {
           type: 'localeDropdown',
           position: 'right',
@@ -94,13 +101,13 @@ const config: Config = {
               value: '<hr style="margin: 0.3rem 0;">',
             },
             {
-              href: `https://github.com/${username}/${repo}/issues/3526`,
+              href: 'https://github.com/facebook/docusaurus/issues/3526',
               label: '帮助我们翻译',
             },
           ],
         },
         {
-          href: `https://github.com/${username}/${repo}`,
+          href: 'https://github.com',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,13 +122,6 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
-    themes: ['@docusaurus/theme-search-algolia'],
-    algolia: {
-      appId: 'X1Z85QJPUV',
-      apiKey: 'bf7211c161e8205da2f933a02534105a',
-      indexName: 'docusaurus-2',
-      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };
