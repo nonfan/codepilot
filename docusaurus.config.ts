@@ -51,21 +51,21 @@ const config: Config = {
           lastVersion: "current",
           versions: {
             current: {
-              label: "HTML5",
+              label: "5.0.0",
               path: "next",
             },
             "4.0.0": {
-              label: "HTML4",
+              label: "4.0.0",
               path: "4.0.0",
               banner: "none",
             },
             "3.0.0": {
-              label: "HTML3",
+              label: "3.0.0",
               path: "3.0.0",
               banner: "none",
             },
             "2.0.0": {
-              label: "HTML2",
+              label: "2.0.0",
               path: "2.0.0",
               banner: "none",
             },
