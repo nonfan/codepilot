@@ -12,9 +12,8 @@ const config: Config = {
 
   // 配置网站站点url
   url: `https://agoodbook.github.io/`,
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/agoodbook.github.io",
+  // 仅agoodbook.github.io仓库使用 '/', 其它仓库页面一律使用 '/<projectName>/'
+  baseUrl: "/",
 
   // GitHub部署配置
   organizationName: username, // 用户名
