@@ -1,16 +1,11 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
-  docs: [
+  frontend: [
     {
       type: "doc",
       id: "started",
-      label: "介绍",
-    },
-    {
-      type: "doc",
-      id: "guide",
-      label: "指南",
+      label: "前端",
     },
   ],
 };

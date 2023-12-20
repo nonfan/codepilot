@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import type { Options as DocsOptions } from "@docusaurus/plugin-content-docs";
 
 const username: string = "agoodbook";
 const repo: string = "agoodbook.github.io";
@@ -48,10 +49,11 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/${username}/${repo}/tree/main`,
+          showLastUpdateTime: true,
           lastVersion: "current",
           versions: {
             current: {
-              label: "5.0.0",
+              label: "最新",
               path: "next",
             },
             "4.0.0": {
@@ -75,6 +77,30 @@ const config: Config = {
           customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
+    ],
+  ],
+  plugins: [
+    [
+      "content-docs",
+      {
+        id: "frontend",
+        path: "frontend",
+        routeBasePath: "frontend",
+        editUrl: `https://github.com/${username}/${repo}/tree/main`,
+        sidebarPath: "./sidebarsFrontend.ts",
+        // showLastUpdateTime: true, // 显示文章编辑时间
+      } satisfies DocsOptions,
+    ],
+    [
+      "content-docs",
+      {
+        id: "backend",
+        path: "backend",
+        routeBasePath: "backend",
+        editUrl: `https://github.com/${username}/${repo}/tree/main`,
+        sidebarPath: "./sidebarsBackend.ts",
+        // showLastUpdateTime: true, // 显示文章编辑时间
+      } satisfies DocsOptions,
     ],
   ],
   themeConfig: {
@@ -113,6 +139,8 @@ const config: Config = {
           label: "文档", // 显示的名称
           position: "left", // 显示在导航的 左边 还是 右边
         },
+        { to: "frontend", label: "前端", position: "left" },
+        { to: "backend", label: "后端", position: "left" },
         //   right
         {
           type: "search",
