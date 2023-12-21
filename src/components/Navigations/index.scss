@@ -156,20 +156,6 @@
   }
 }
 
-// 模态框
-.modal-container {
-  display: flex;
-  padding: 10px 0;
-
-  .modal-item {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 // 标签
 .tag-container {
   display: flex;
