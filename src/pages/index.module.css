@@ -10,6 +10,21 @@
   overflow: hidden;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svg {
+  width: 25px;
+}
+
+.space {
+  width: 5px;
+}
+
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

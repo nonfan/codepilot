@@ -5,7 +5,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import HomepageStartedSvg from "@site/src/assets/icons/HomepageStartedSvg";
+import HomepageStarted from "@site/src/pages/HomepageStarted";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -24,7 +24,7 @@ function HomepageHeader() {
             }
             to="/docs/next"
           >
-            <HomepageStartedSvg title="知识库" direction="left" />
+            <HomepageStarted title="知识库" direction="left" />
           </Link>
         </div>
       </div>
