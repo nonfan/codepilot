@@ -1,12 +1,4 @@
 [data-theme='light'] {
-  .gitee-icon {
-    fill: #c71d23;
-  }
-
-  .bg {
-    background-color: #ffffff;
-  }
-
   .border {
     border: 1px solid #ececec;
   }
@@ -21,29 +13,12 @@
 }
 
 [data-theme='dark'] {
-  .gitee-icon {
-    fill: #fff;
-  }
-
-  .bg {
-    background-color: #1f1f1f;
-  }
-
   .border {
     border: 1px solid #282828;
   }
 
   .navigator-container .content {
     background-color: #2c2e2f;
-  }
-
-  .modal-wrap {
-    .ant-modal-content,
-    .ant-modal-title,
-    .ant-modal-close-icon {
-      background-color: #1f1f1f;
-      color: #fff;
-    }
   }
 
   .color {
@@ -83,10 +58,6 @@
   }
 
   .content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
     transition: transform 0.2s ease;
     border-radius: 5px;
     display: flex;
@@ -102,16 +73,9 @@
       align-items: center;
       margin: 0 5px;
       border-radius: 50%;
-      overflow: hidden;
     }
 
     .desc {
-      width: calc(100% - 70px);
-
-      div {
-        width: 100%;
-      }
-
       .title {
         font-weight: 600;
         display: -webkit-box;
@@ -133,30 +97,22 @@
     }
   }
 
-  .box:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: height 0.2s;
+  .box:hover {
+    .content {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba($color: #004ca3, $alpha: 0.1);
+    }
+
+    .icon {
+      transform: rotate(360deg);
+      transition: all 0.5s ease;
+    }
+
   }
 
-  .box:hover .content {
-    transform: translateY(-10px);
-  }
 
-  .box:hover:before {
-    height: 10px;
-  }
-
-  .box:hover .content {
-    box-shadow: 0 0 20px rgba($color: #004ca3, $alpha: 0.1);
-  }
 }
 
-// 标签
 .tag-container {
   display: flex;
   align-items: center;
