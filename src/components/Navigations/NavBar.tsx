@@ -4,12 +4,14 @@ interface Props {
   item: Item;
 }
 function NavBar(props: Props) {
-  const { title, smallTitle, icon, url } = props.item;
+  const { title, smallTitle, icon: Icon, url } = props.item;
 
   return (
     <div className="box">
       <a href={url} target="_blank" className="content border">
-        <div className="icon">{icon}</div>
+        <div className="icon">
+          <Icon className="icon" />
+        </div>
         <div className="desc">
           <div className="title color">{title}</div>
           <div className="small">{smallTitle}</div>

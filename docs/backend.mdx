@@ -4,15 +4,8 @@ hide_table_of_contents: true
 hide_last_update: true
 ---
 import Navigations from "../src/components/Navigations";
-import PythonSvg from "../src/assets/icons/PythonSvg";
+import {ReptileTechnology} from "../src/data";
 
 # 后端技术
 
-<Navigations title="爬虫技术" dataSource={[
-  {
-    title: "Python",
-    smallTitle: "Python是一种通用、高级、解释型编程语言。它并不局限于特定的技术领域，而是被广泛应用于多个领域。",
-    url: "https://agoodbook.github.io/python/",
-    icon: <PythonSvg />,
-  }
-]}/>
+<Navigations title="爬虫技术" dataSource={ReptileTechnology}/>
