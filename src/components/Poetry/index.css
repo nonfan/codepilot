@@ -18,7 +18,6 @@
     transition: opacity 0.3s;
     position: absolute;
     right: 50%;
-    padding-top: 30px;
     transform: translateX(50%);
 }
 

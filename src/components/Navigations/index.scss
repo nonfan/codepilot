@@ -45,9 +45,6 @@
   margin-top: -10px;
 
   .box {
-    position: relative;
-    margin-bottom: 10px;
-    height: 90px;
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -145,7 +142,7 @@
   .navigator-container {
     .box {
       width: calc(100% / 3 - 20px);
-      margin: 10px 15px;
+      margin: 10px;
     }
 
     .box:nth-child(3n + 1) {
@@ -161,8 +158,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .navigator-container {
     .box {
-      width: calc(50% - 20px);
-      margin: 20px;
+      width: calc(50% - 10px);
+      margin: 10px;
     }
 
     .box:nth-child(2n + 1) {

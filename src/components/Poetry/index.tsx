@@ -57,25 +57,23 @@ export default function Poetry() {
         <div className="poetry">
           {contextHolder}
           <Tooltip color="#2db7f5" placement="top" title="点击复制">
-            <span
+            <div
               onMouseEnter={() => setIsShowName(true)}
               onMouseLeave={() => setIsShowName(false)}
               className="hitokoto"
               onClick={handleCopyHitokoto}
             >
               「 {info.poetry}」
-            </span>
+              <div
+                style={{
+                  opacity: isShowName ? 1 : 0,
+                }}
+                className="from"
+              >
+                {info.name || "来源网络"}
+              </div>
+            </div>
           </Tooltip>
-
-          <div
-            style={{
-              opacity: isShowName ? 1 : 0,
-              paddingTop: "60px",
-            }}
-            className="from"
-          >
-            {info.name || "来源网络"}
-          </div>
         </div>
       ) : (
         ""
