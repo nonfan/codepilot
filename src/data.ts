@@ -18,6 +18,7 @@ import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
 import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
 import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
 import FetchSvg from "@site/src/assets/icons/FetchSvg";
+import { getRandomElements } from "@site/src/utils";
 
 interface Children {
   title: string;
@@ -210,6 +211,8 @@ const AllItem: Item[] = [
   ...HttpRequest,
 ];
 
+const RandomItem = getRandomElements(AllItem, 6);
+
 export {
   ThreeMusketeers,
   ReptileTechnology,
@@ -217,5 +220,5 @@ export {
   NodeJSBackendFrame,
   SocketFrame,
   HttpRequest,
-  AllItem,
+  RandomItem,
 };
