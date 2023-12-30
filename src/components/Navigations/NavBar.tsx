@@ -10,7 +10,7 @@ function NavBar(props: Props) {
     <div className="box">
       <a href={url} target="_blank" className="content border">
         <div className="icon">
-          <Icon className="icon" />
+          <Icon />
         </div>
         <div className="desc">
           <div className="title color">{title}</div>

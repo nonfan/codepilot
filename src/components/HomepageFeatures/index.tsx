@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AllItem } from "@site/src/data";
+import { getRandomElements } from "@site/src/utils";
 
 interface Children {
   title: string;
@@ -21,7 +22,6 @@ function Feature(props: FeatureList) {
   const { title, smallTitle, url, icon: Icon } = props;
 
   const handleOpen = (url: string) => {
-    console.log(url);
     window.open(url, "_blank");
   };
 
@@ -32,14 +32,19 @@ function Feature(props: FeatureList) {
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{smallTitle}</p>
+        <p className="ellipsis">{smallTitle}</p>
       </div>
     </div>
   );
 }
 
 export default function HomepageFeatures(): JSX.Element {
-  const [featureList] = useState<FeatureList[]>(AllItem);
+  const [featureList, setFeatureList] = useState<FeatureList[]>(AllItem);
+
+  useEffect(() => {
+    const newFeatureList = getRandomElements(featureList, 6);
+    setFeatureList(newFeatureList);
+  }, []);
 
   return (
     <section className={styles.features}>
