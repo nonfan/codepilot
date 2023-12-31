@@ -4,7 +4,14 @@ hide_table_of_contents: true
 hide_last_update: true
 ---
 import Navigations from "../src/components/Navigations";
-import {HttpRequest, JavaScriptFrame, ThreeMusketeers} from "../src/data";
+import {
+  ChartTools,
+  CSSFrame, FrontendDevelopmentBuildTools,
+  HttpRequest,
+  JavaScriptFrame,
+  JavaScriptTestFrame,
+  ThreeMusketeers, WebGLJavaScriptLibrary
+} from "../src/data";
 
 # 前端技术
 
@@ -13,3 +20,13 @@ import {HttpRequest, JavaScriptFrame, ThreeMusketeers} from "../src/data";
 <Navigations title="JavaScript框架" dataSource={JavaScriptFrame}/>
 
 <Navigations title="网络请求技术" dataSource={HttpRequest}/>
+
+<Navigations title="JavaScript测试框架" dataSource={JavaScriptTestFrame}/>
+
+<Navigations title="CSS 框架" dataSource={CSSFrame}/>
+
+<Navigations title="前端开发构建工具" dataSource={FrontendDevelopmentBuildTools}/>
+
+<Navigations title="可视化图标工具" dataSource={ChartTools}/>
+
+<Navigations title="WebGL JavaScript库" dataSource={WebGLJavaScriptLibrary}/>
