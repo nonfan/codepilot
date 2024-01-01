@@ -1,4 +1,3 @@
-import React from "react";
 import HtmlSvg from "@site/src/assets/icons/HtmlSvg";
 import CssSvg from "@site/src/assets/icons/CssSvg";
 import JavaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
@@ -43,24 +42,22 @@ import EChartsSvg from "@site/src/assets/icons/EChartsSvg";
 import ThreeSvg from "@site/src/assets/icons/ThreeSvg";
 import DenoSvg from "@site/src/assets/icons/DenoSvg";
 import PlaywrightSvg from "@site/src/assets/icons/PlaywrightSvg";
-
-interface Children {
-  title: string;
-  icon: React.FC;
-  url: string;
-}
-interface Item {
-  title: string;
-  smallTitle: string;
-  url: string;
-  icon: React.FC;
-  children?: Children[];
-}
+import ReactNativeSvg from "@site/src/assets/icons/ReactNativeSvg";
+import FlutterSvg from "@site/src/assets/icons/FlutterSvg";
+import UniAppSvg from "@site/src/assets/icons/UniAppSvg";
+import WechatMiniSvg from "@site/src/assets/icons/WechatMiniSvg";
+import AntDesignSvg from "@site/src/assets/icons/AntDesignSvg";
+import ElementUiSvg from "@site/src/assets/icons/ElementUiSvg";
+import { Navigations } from "@site/src/index";
+import ElectronSvg from "@site/src/assets/icons/ElectronSvg";
+import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
+import RollupSvg from "@site/src/assets/icons/RollupSvg";
+import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
 
 /**
  * 前端三剑客
  */
-const ThreeMusketeers: Item[] = [
+const ThreeMusketeers: Navigations = [
   {
     title: "HTML",
     smallTitle:
@@ -94,7 +91,7 @@ const ThreeMusketeers: Item[] = [
 /**
  * javascript框架
  */
-const JavaScriptFrame: Item[] = [
+const JavaScriptFrame: Navigations = [
   {
     title: "Vue.js",
     smallTitle:
@@ -142,7 +139,7 @@ const JavaScriptFrame: Item[] = [
 /**
  * 网络请求技术
  */
-const HttpRequest: Item[] = [
+const HttpRequest: Navigations = [
   {
     title: "HTTP",
     smallTitle:
@@ -183,7 +180,7 @@ const HttpRequest: Item[] = [
 /**
  * JavaScript测试框架
  */
-const JavaScriptTestFrame: Item[] = [
+const JavaScriptTestFrame: Navigations = [
   {
     title: "Jest",
     smallTitle: "Jest 是一个令人愉快的 JavaScript 测试框架，专注于 简洁明快",
@@ -209,7 +206,7 @@ const JavaScriptTestFrame: Item[] = [
 /**
  *  CSS 框架
  */
-const CSSFrame: Item[] = [
+const CSSFrame: Navigations = [
   {
     title: "Sass",
     smallTitle: "Sass 是世界上最成熟、最稳定、最强大的专业级CSS扩展语言 。",
@@ -242,7 +239,7 @@ const CSSFrame: Item[] = [
 /**
  * 前端开发构建工具
  */
-const FrontendDevelopmentBuildTools: Item[] = [
+const FrontendDevelopmentBuildTools: Navigations = [
   {
     title: "Vite",
     smallTitle:
@@ -271,12 +268,19 @@ const FrontendDevelopmentBuildTools: Item[] = [
     url: "https://agoodbook.github.io/gulp/",
     icon: GulpSvg,
   },
+  {
+    title: "Rollup",
+    smallTitle:
+      "Rollup 是一个 JavaScript 模块打包器，主要用于构建现代的 JavaScript 应用和库。它的目标是将你的代码打包成更小、更高效的输出，以便在浏览器中更快地加载。",
+    url: "https://agoodbook.github.io/rollup/",
+    icon: RollupSvg,
+  },
 ];
 
 /**
  * 前端图表工具和库
  */
-const ChartTools: Item[] = [
+const ChartTools: Navigations = [
   {
     title: "Chart.js",
     smallTitle:
@@ -310,7 +314,7 @@ const ChartTools: Item[] = [
 /**
  * WebGL JavaScript库
  */
-const WebGLJavaScriptLibrary: Item[] = [
+const WebGLJavaScriptLibrary: Navigations = [
   {
     title: "Three.js",
     smallTitle:
@@ -321,9 +325,85 @@ const WebGLJavaScriptLibrary: Item[] = [
 ];
 
 /**
+ * 移动端框架
+ */
+const MobileEndFrame: Navigations = [
+  {
+    title: "React Native",
+    smallTitle:
+      "React Native 是由 Facebook 推出的一款用于构建跨平台移动应用的开源框架。它基于 React（用于构建用户界面的JavaScript库），并允许开发者使用相同的代码库创建同时运行在 iOS 和 Android 平台上的原生应用。",
+    url: "https://agoodbook.github.io/react-native/",
+    icon: ReactNativeSvg,
+  },
+  {
+    title: "Flutter",
+    smallTitle:
+      "Flutter 是由 Google 推出的一款开源框架，用于构建跨平台移动应用、桌面应用和 Web 应用。Flutter 使用 Dart 编程语言，并采用自己的渲染引擎，具有一些独特的特点和优势。",
+    url: "https://agoodbook.github.io/flutter/",
+    icon: FlutterSvg,
+  },
+  {
+    title: "Uni-app",
+    smallTitle:
+      "Uni-app（Universal Application）是一个基于 Vue.js 的跨平台开发框架，可以用于快速构建同时运行在多个平台（包括iOS、Android、Web、小程序等）的应用程序。",
+    url: "https://agoodbook.github.io/uni-app/",
+    icon: UniAppSvg,
+  },
+  {
+    title: "微信小程序",
+    smallTitle:
+      "微信小程序是一种轻量级、快速开发的应用形式，它可以在微信内直接运行，无需用户下载安装。微信小程序提供了一套完整的开发框架和工具，开发者可以使用HTML、CSS、JavaScript等技术进行开发",
+    url: "https://agoodbook.github.io/wechat-mini-program/",
+    icon: WechatMiniSvg,
+  },
+];
+
+/**
+ * UI组件库
+ */
+const UIComponentsLibrary: Navigations = [
+  {
+    title: "Ant Design",
+    smallTitle:
+      "Ant Design 是一套由阿里巴巴（Alibaba）前端团队开发的企业级UI设计语言和React组件库。它提供了一套完整的设计规范和React组件，用于构建现代化、美观、易用的Web应用程序。Ant Design的目标是通过提供一致的设计语言和可复用的React组件，简化企业级应用程序的开发流程。",
+    url: "https://agoodbook.github.io/ant-design/",
+    icon: AntDesignSvg,
+  },
+  {
+    title: "ElementUi",
+    smallTitle:
+      "Element UI 是一套基于 Vue.js 的开源 UI 框架，提供了一系列丰富的可复用组件，用于构建现代化的 Web 应用程序。它是饿了么（Eleme）前端团队推出的项目，目的是为 Vue.js 开发者提供一套符合设计规范、易于使用和高度可定制的 UI 组件库。",
+    url: "https://agoodbook.github.io/element-ui/",
+    icon: ElementUiSvg,
+  },
+];
+
+/**
+ * 探索前端技术
+ */
+const ExploreFrontendTechnologies: Navigations = [
+  {
+    title: "WebRTC",
+    smallTitle:
+      "WebRTC（Web Real-Time Communication）是一项支持浏览器之间实时通信的技术。它允许开发者构建实时音视频通信应用，如视频会议、实时聊天等。",
+    url: "https://agoodbook.github.io/web-rtc/",
+    icon: WebRTCSvg,
+  },
+  {
+    title: "GraphQL",
+    smallTitle:
+      "GraphQL 是一种用于 API 查询语言的规范，由 Facebook 于2012年开发并于2015年对外公开。GraphQL 提供了一种更高效、灵活和强大的方式来获取和提交数据，使得客户端能够精确地请求需要的数据而不受服务器的限制。",
+    url: "https://agoodbook.github.io/graphql/",
+    icon: GraphQLSvg,
+  },
+];
+
+/*************************************************前端与后端数据源分界线**************************************************/
+
+/**
  * 爬虫技术
  */
-const ReptileTechnology: Item[] = [
+const ReptileTechnology: Navigations = [
   {
     title: "Python",
     smallTitle:
@@ -336,7 +416,7 @@ const ReptileTechnology: Item[] = [
 /**
  * Javascript 运行环境
  */
-const JavaScriptRuntimeEnvironment: Item[] = [
+const JavaScriptRuntimeEnvironment: Navigations = [
   {
     title: "Node.js",
     smallTitle:
@@ -356,7 +436,7 @@ const JavaScriptRuntimeEnvironment: Item[] = [
 /**
  * NodeJS后端框架
  */
-const NodeJSBackendFrame: Item[] = [
+const NodeJSBackendFrame: Navigations = [
   {
     title: "Express.js",
     smallTitle:
@@ -397,7 +477,7 @@ const NodeJSBackendFrame: Item[] = [
 /**
  * Socket框架
  */
-const SocketFrame: Item[] = [
+const SocketFrame: Navigations = [
   {
     title: "Socket.io",
     smallTitle:
@@ -410,7 +490,7 @@ const SocketFrame: Item[] = [
 /**
  * 数据库ORM框架
  */
-const DataBaseORMRFrame: Item[] = [
+const DataBaseORMRFrame: Navigations = [
   {
     title: "Prisma",
     smallTitle:
@@ -434,7 +514,22 @@ const DataBaseORMRFrame: Item[] = [
   },
 ];
 
-const AllItem: Item[] = [
+/*************************************************全栈技术**************************************************/
+
+/**
+ * 桌面应用程序开发框架
+ */
+const DesktopAppFramework: Navigations = [
+  {
+    title: "Electron",
+    smallTitle:
+      "Electron 是一个开源的跨平台桌面应用程序开发框架，它允许开发者使用常用的 Web 技术，如 HTML、CSS 和 JavaScript/TypeScript，构建桌面应用程序。",
+    url: "https://agoodbook.github.io/electron/",
+    icon: ElectronSvg,
+  },
+];
+
+const AllItem: Navigations = [
   ...ThreeMusketeers,
   ...ReptileTechnology,
   ...JavaScriptFrame,
@@ -448,9 +543,13 @@ const AllItem: Item[] = [
   ...ChartTools,
   ...WebGLJavaScriptLibrary,
   ...JavaScriptRuntimeEnvironment,
+  ...MobileEndFrame,
+  ...UIComponentsLibrary,
+  ...DesktopAppFramework,
+  ...ExploreFrontendTechnologies,
 ];
 
-const RandomItem = getRandomElements(AllItem, 6);
+const RandomItem: Navigations = getRandomElements(AllItem, 6);
 
 export {
   RandomItem,
@@ -467,4 +566,8 @@ export {
   ChartTools,
   WebGLJavaScriptLibrary,
   JavaScriptRuntimeEnvironment,
+  MobileEndFrame,
+  UIComponentsLibrary,
+  DesktopAppFramework,
+  ExploreFrontendTechnologies,
 };

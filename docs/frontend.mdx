@@ -3,30 +3,36 @@ id: frontend
 hide_table_of_contents: true
 hide_last_update: true
 ---
-import Navigations from "../src/components/Navigations";
+import NavigationList from "../src/components/NavigationList";
 import {
   ChartTools,
-  CSSFrame, FrontendDevelopmentBuildTools,
+  CSSFrame, ExploreFrontendTechnologies, FrontendDevelopmentBuildTools,
   HttpRequest,
   JavaScriptFrame,
-  JavaScriptTestFrame,
-  ThreeMusketeers, WebGLJavaScriptLibrary
+  JavaScriptTestFrame, MobileEndFrame,
+  ThreeMusketeers, UIComponentsLibrary, WebGLJavaScriptLibrary
 } from "../src/data";
 
 # 前端技术
 
-<Navigations title="前端三剑客" dataSource={ThreeMusketeers}/>
+<NavigationList title="前端三剑客" dataSource={ThreeMusketeers}/>
 
-<Navigations title="JavaScript框架" dataSource={JavaScriptFrame}/>
+<NavigationList title="JavaScript框架" dataSource={JavaScriptFrame}/>
 
-<Navigations title="网络请求技术" dataSource={HttpRequest}/>
+<NavigationList title="网络请求技术" dataSource={HttpRequest}/>
 
-<Navigations title="JavaScript测试框架" dataSource={JavaScriptTestFrame}/>
+<NavigationList title="JavaScript测试框架" dataSource={JavaScriptTestFrame}/>
 
-<Navigations title="CSS 框架" dataSource={CSSFrame}/>
+<NavigationList title="CSS 框架" dataSource={CSSFrame}/>
 
-<Navigations title="前端开发构建工具" dataSource={FrontendDevelopmentBuildTools}/>
+<NavigationList title="前端开发构建工具" dataSource={FrontendDevelopmentBuildTools}/>
 
-<Navigations title="可视化图标工具" dataSource={ChartTools}/>
+<NavigationList title="可视化图标工具" dataSource={ChartTools}/>
 
-<Navigations title="WebGL JavaScript库" dataSource={WebGLJavaScriptLibrary}/>
+<NavigationList title="渲染 3D 图形的技术" dataSource={WebGLJavaScriptLibrary}/>
+
+<NavigationList title="移动端框架" dataSource={MobileEndFrame}/>
+
+<NavigationList title="UI组件库" dataSource={UIComponentsLibrary}/>
+
+<NavigationList title="探索前端技术" dataSource={ExploreFrontendTechnologies}/>

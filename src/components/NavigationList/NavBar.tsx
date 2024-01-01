@@ -1,10 +1,10 @@
-import { Item } from "@site/src/components/Navigations/types";
+import { NavigationItem } from "@site/src";
 
 interface Props {
-  item: Item;
+  navigationItem: NavigationItem;
 }
 function NavBar(props: Props) {
-  const { title, smallTitle, icon: Icon, url } = props.item;
+  const { title, smallTitle, icon: Icon, url } = props.navigationItem;
 
   return (
     <div className="box">

@@ -115,6 +115,7 @@ const config: Config = {
         },
         { to: "docs/next/frontend", label: "前端", position: "left" },
         { to: "docs/next/backend", label: "后端", position: "left" },
+        { to: "docs/next/full-stack", label: "全栈", position: "left" },
         //   right
         {
           type: "search",
