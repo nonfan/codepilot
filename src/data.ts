@@ -51,6 +51,9 @@ import ElectronSvg from "@site/src/assets/icons/ElectronSvg";
 import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
 import RollupSvg from "@site/src/assets/icons/RollupSvg";
 import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
+import EggSvg from "@site/src/assets/icons/EggSvg";
+import UmiJSSvg from "@site/src/assets/icons/UmiJSSvg";
+import RemixSvg from "@site/src/assets/icons/RemixSvg";
 
 /**
  * 前端三剑客
@@ -131,6 +134,20 @@ const JavaScriptFrame: Navigations = [
       "Svelte.js 是一个用于构建用户界面的现代 JavaScript 框架。与传统的前端框架不同，Svelte 在构建时将组件转换为高效、优化的原生 JavaScript，而不是在运行时进行。",
     url: "https://agoodbook.github.io/svelte.js/",
     icon: SvelteSvg,
+  },
+  {
+    title: "UmiJS",
+    smallTitle:
+      "UmiJS 是一个基于 React 的前端应用开发框架，提供了一整套开发、构建和部署工具，旨在帮助开发者更快速、更高效地构建现代化的前端应用。它构建于 React、Webpack、Babel 等技术栈之上，并具有很强的插件化和可配置性。",
+    url: "https://agoodbook.github.io/umi.js/",
+    icon: UmiJSSvg,
+  },
+  {
+    title: "Remix",
+    smallTitle:
+      "Remix 是一个面向 React 开发的现代 web 开发框架，它旨在提供更好的开发体验、更灵活的路由管理和更高性能的应用程序。Remix 提供了一种新的前端开发方式，支持数据驱动和增量式静态生成等特性，以提升 web 应用的性能和用户体验。",
+    url: "https://agoodbook.github.io/remix/",
+    icon: RemixSvg,
   },
 ];
 
@@ -448,6 +465,13 @@ const NodeJSBackendFrame: Navigations = [
       "koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。",
     url: "https://agoodbook.github.io/koa.js/",
     icon: "Ko",
+  },
+  {
+    title: "Egg.js",
+    smallTitle:
+      "Egg.js 是一个基于 Node.js 和 Koa 的企业级应用开发框架，旨在提供一套约定和最佳实践，以帮助开发者更快速、更高效地构建可维护和可扩展的应用。Egg.js 继承了 Koa 的中间件机制，同时引入了更多的特性和约定，使得开发者在处理复杂业务逻辑时更加得心应手。",
+    url: "https://agoodbook.github.io/egg.js/",
+    icon: EggSvg,
   },
   {
     title: "Nest.js",
