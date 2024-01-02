@@ -3,21 +3,9 @@ import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import React, { useEffect, useState } from "react";
 import { RandomItem } from "@site/src/data";
+import { NavigationItem, Navigations } from "@site/src";
 
-interface Children {
-  title: string;
-  icon: React.FC;
-  url: string;
-}
-
-interface FeatureList {
-  title: string;
-  smallTitle: string;
-  url: string;
-  icon: React.FC;
-  children?: Children[];
-}
-function Feature(props: FeatureList) {
+function Feature(props: NavigationItem) {
   const { title, smallTitle, url, icon: Icon } = props;
 
   const handleOpen = (url: string) => {
@@ -26,7 +14,7 @@ function Feature(props: FeatureList) {
 
   return (
     <div className={clsx("col col--4 pointer")} onClick={() => handleOpen(url)}>
-      <div className={styles.icon}>
+      <div className="navigation-item">
         <Icon />
       </div>
       <div className="text--center padding-horiz--md">
@@ -38,7 +26,7 @@ function Feature(props: FeatureList) {
 }
 
 export default function HomepageFeatures(): JSX.Element {
-  const [featureList, setFeatureList] = useState<FeatureList[]>([]);
+  const [featureList, setFeatureList] = useState<Navigations>([]);
 
   useEffect(() => {
     setFeatureList(RandomItem);
@@ -48,7 +36,7 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {featureList.map((props: FeatureList, idx) => (
+          {featureList.map((props: NavigationItem, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

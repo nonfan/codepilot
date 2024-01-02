@@ -1,6 +1,6 @@
-function TextSvg(props: any) {
+function TextSvg(props: { text: string }) {
   return (
-    <svg viewBox="0 0 200 200" fill="currentColor" className="icon-svg">
+    <svg viewBox="0 0 200 200" fill="currentColor">
       <text
         textAnchor="middle"
         alignmentBaseline="middle"
@@ -9,7 +9,7 @@ function TextSvg(props: any) {
         y="50%"
       >
         <tspan
-          fontSize="60"
+          fontSize="70"
           fill="currentColor"
           opacity="1"
           fontFamily="宋体"

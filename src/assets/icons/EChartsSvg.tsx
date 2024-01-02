@@ -1,6 +1,6 @@
 function EChartsSvg() {
   return (
-    <svg viewBox="0.00 0.00 643.00 146.00" className="icon-svg">
+    <svg viewBox="0.00 0.00 643 146" style={{ width: "200" }}>
       <path
         stroke="#f29cb0"
         strokeWidth="2.00"

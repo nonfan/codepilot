@@ -9,7 +9,7 @@ export type NavigationItem = {
   title: string;
   smallTitle: string;
   url: string;
-  icon: React.FC;
+  icon: React.FC | string;
   children?: Children[];
 };
 

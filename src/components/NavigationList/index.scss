@@ -62,7 +62,7 @@
     padding: 5px;
     height: 110px;
 
-    .icon {
+    .navbar-icon {
       width: 50px;
       height: 50px;
       display: flex;
@@ -101,7 +101,7 @@
       box-shadow: 0 0 20px rgba($color: #004ca3, $alpha: 0.1);
     }
 
-    .icon {
+    .navbar-icon {
       transform: rotate(360deg);
       transition: all 0.5s ease;
     }

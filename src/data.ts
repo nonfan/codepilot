@@ -8,7 +8,6 @@ import ExpressSvg from "@site/src/assets/icons/ExpressSvg";
 import NestSvg from "@site/src/assets/icons/NestSvg";
 import AngularSvg from "@site/src/assets/icons/AngularSvg";
 import FastifySvg from "@site/src/assets/icons/FastifySvg";
-import KoaSvg from "@site/src/assets/icons/KoaSvg";
 import MeteorSvg from "@site/src/assets/icons/MeteorSvg";
 import NuxtSvg from "@site/src/assets/icons/NuxtSvg";
 import NextSvg from "@site/src/assets/icons/NextSvg";
@@ -16,7 +15,6 @@ import TypeScriptSvg from "@site/src/assets/icons/TypeScriptSvg";
 import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
 import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
 import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
-import FetchSvg from "@site/src/assets/icons/FetchSvg";
 import { getRandomElements } from "@site/src/utils";
 import HttpSvg from "@site/src/assets/icons/HttpSvg";
 import JestSvg from "@site/src/assets/icons/JestSvg";
@@ -159,7 +157,7 @@ const HttpRequest: Navigations = [
     smallTitle:
       "Fetch 是一种用于在浏览器中进行网络请求的现代 API。它提供了一种更强大和灵活的方式来发起 HTTP 请求，替代了传统的 XMLHttpRequest。Fetch API 使用 Promise 对象，使得异步代码更加清晰和易于处理。",
     url: "https://agoodbook.github.io/fetch/",
-    icon: FetchSvg,
+    icon: "Fetch",
   },
   {
     title: "JQuery-Http",
@@ -449,7 +447,7 @@ const NodeJSBackendFrame: Navigations = [
     smallTitle:
       "koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。",
     url: "https://agoodbook.github.io/koa.js/",
-    icon: KoaSvg,
+    icon: "Ko",
   },
   {
     title: "Nest.js",

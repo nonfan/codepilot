@@ -1,6 +1,6 @@
 function AngularSvg() {
   return (
-    <svg viewBox="0 0 1024 1024" className="icon-svg">
+    <svg viewBox="0 0 1024 1024">
       <path d="M435.8 536.2H512V353z" fill="#DD0031"></path>
       <path
         d="M400.9 616.8l-52.4 130.8h-97.2L512 163V64L94.9 212.7l63.6 551.5L512 960V616.8z"
