@@ -4,9 +4,22 @@ import styles from "./styles.module.css";
 import React, { useEffect, useState } from "react";
 import { RandomItem } from "@site/src/data";
 import { NavigationItem, Navigations } from "@site/src";
+import TextSvg from "@site/src/assets/icons/TextSvg";
 
 function Feature(props: NavigationItem) {
-  const { title, smallTitle, url, icon: Icon } = props;
+  const { title, smallTitle, url, icon } = props;
+
+  const renderIcon = () => {
+    if (typeof icon === "string") {
+      return <TextSvg text={icon} />;
+    }
+
+    if (typeof icon === "function") {
+      return React.createElement(icon as React.FC);
+    }
+
+    return <TextSvg text="Logo" />;
+  };
 
   const handleOpen = (url: string) => {
     window.open(url, "_blank");
@@ -14,9 +27,7 @@ function Feature(props: NavigationItem) {
 
   return (
     <div className={clsx("col col--4 pointer")} onClick={() => handleOpen(url)}>
-      <div className="navigation-item">
-        <Icon />
-      </div>
+      <div className="navigation-item">{renderIcon()}</div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p className="ellipsis">{smallTitle}</p>

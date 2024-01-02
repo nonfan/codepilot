@@ -54,6 +54,14 @@ import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
 import EggSvg from "@site/src/assets/icons/EggSvg";
 import UmiJSSvg from "@site/src/assets/icons/UmiJSSvg";
 import RemixSvg from "@site/src/assets/icons/RemixSvg";
+import LodashSvg from "@site/src/assets/icons/LodashSvg";
+import ImmutableSvg from "@site/src/assets/icons/ImmutableSvg";
+import RxSvg from "@site/src/assets/icons/RxSvg";
+import MomentSvg from "@site/src/assets/icons/MomentSvg";
+import DaySvg from "@site/src/assets/icons/DaySvg";
+import MochaSvg from "@site/src/assets/icons/MochaSvg";
+import GSAPSvg from "@site/src/assets/icons/GSAPSvg";
+import ChaiSvg from "@site/src/assets/icons/ChaiSvg";
 
 /**
  * 前端三剑客
@@ -152,6 +160,53 @@ const JavaScriptFrame: Navigations = [
 ];
 
 /**
+ * javascript 函数库
+ */
+const JavaScriptFunctionLibrary: Navigations = [
+  {
+    title: "Lodash.js",
+    smallTitle: "Lodash 是一个一致性、模块化、高性能的 JavaScript 实用工具库。",
+    url: "https://agoodbook.github.io/lodash.js/",
+    icon: LodashSvg,
+  },
+  {
+    title: "Immutable.js",
+    smallTitle:
+      "Immutable.js是由Facebook开发的JavaScript库，专注于提供不可变（Immutable）的数据结构。它鼓励使用不可变的数据模型，其中数据一旦创建就不能被修改，而是通过创建新的不可变实例来表示变化。这有助于提高应用程序的状态管理、可维护性和性能。",
+    url: "https://agoodbook.github.io/immutable.js/",
+    icon: ImmutableSvg,
+  },
+  {
+    title: "Rx.js",
+    smallTitle:
+      "RxJS（Reactive Extensions for JavaScript）是一个用于处理异步和事件驱动编程的JavaScript库。它是响应式编程的一部分，提供了一套丰富的工具和操作符，用于处理事件流和异步操作。",
+    url: "https://agoodbook.github.io/rx.js/",
+    icon: RxSvg,
+  },
+  {
+    title: "Moment.js",
+    smallTitle:
+      "Moment.js是一个处理日期和时间的库，提供了丰富的日期格式化、解析、比较等功能，使得在JavaScript中操作日期变得更加简便。",
+    url: "https://agoodbook.github.io/moment.js/",
+    icon: MomentSvg,
+  },
+  {
+    title: "Day.js",
+    smallTitle:
+      "Day.js 是一个轻量级的 JavaScript 日期库，用于处理日期和时间。它的设计目标是替代 Moment.js，提供相似的 API 和功能，但更小巧、性能更好，并且在维护上更活跃。",
+    url: "https://agoodbook.github.io/day.js/",
+    icon: DaySvg,
+  },
+  {
+    title: "GSAP",
+    smallTitle:
+      "GSAP（GreenSock Animation Platform）是一个强大而灵活的JavaScript动画库，用于在网页上创建高性能的动画效果。GSAP提供了丰富的功能和灵活的API，使开发者能够轻松创建流畅、复杂的动画，包括缓动、时间轴控制、CSS属性动画等。",
+    url: "https://agoodbook.github.io/gsap/",
+    icon: GSAPSvg,
+  },
+];
+
+/**
  * 网络请求技术
  */
 const HttpRequest: Navigations = [
@@ -215,6 +270,20 @@ const JavaScriptTestFrame: Navigations = [
       "Playwright 是一款由 Microsoft 开发的用于自动化浏览器操作的开源工具。它提供了一套强大的 API，支持多种浏览器（Chromium、Firefox、WebKit）和多种编程语言（JavaScript、TypeScript、Python、C#）。Playwright 的主要用途包括自动化测试、屏幕截图、爬虫和执行浏览器操作的自动化任务。",
     url: "https://agoodbook.github.io/playwright/",
     icon: PlaywrightSvg,
+  },
+  {
+    title: "Mocha",
+    smallTitle:
+      "Mocha 是一个流行的 JavaScript 测试框架，用于编写和执行测试。它支持多种测试类型，包括单元测试、集成测试和端到端测试。Mocha 的设计注重简洁、灵活，并且易于使用，因此成为许多 JavaScript 项目中的首选测试框架。",
+    url: "https://agoodbook.github.io/mocha/",
+    icon: MochaSvg,
+  },
+  {
+    title: "Chai",
+    smallTitle:
+      "Chai 是一个 JavaScript 断言库，用于编写测试时进行断言。它可以与各种测试框架（如Mocha、Jasmine、Jest等）一起使用，并提供多种断言风格，包括 BDD（行为驱动开发）和 TDD（测试驱动开发）风格。",
+    url: "https://agoodbook.github.io/chai/",
+    icon: ChaiSvg,
   },
 ];
 
@@ -569,6 +638,7 @@ const AllItem: Navigations = [
   ...UIComponentsLibrary,
   ...DesktopAppFramework,
   ...ExploreFrontendTechnologies,
+  ...JavaScriptFunctionLibrary,
 ];
 
 const RandomItem: Navigations = getRandomElements(AllItem, 6);
@@ -592,4 +662,5 @@ export {
   UIComponentsLibrary,
   DesktopAppFramework,
   ExploreFrontendTechnologies,
+  JavaScriptFunctionLibrary,
 };
