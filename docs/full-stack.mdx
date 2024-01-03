@@ -7,6 +7,10 @@ hide_last_update: true
 # 全栈技术
 
 import NavigationList from "../src/components/NavigationList";
-import {DesktopAppFramework} from "../src/data";
+import {Databases, DesktopAppFramework, ReptileTechnology} from "../src/data";
+
+<NavigationList title="爬虫技术" dataSource={ReptileTechnology}/>
 
 <NavigationList title="桌面应用程序开发框架" dataSource={DesktopAppFramework}/>
+
+<NavigationList title="数据库" dataSource={Databases}/>

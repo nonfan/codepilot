@@ -50,7 +50,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
         <div className="navbar-icon">{renderIcon()}</div>
         <div className="desc">
           <div className="title color">{title}</div>
-          <div className="small">{smallTitle}</div>
+          <div className="small ellipsis">{smallTitle}</div>
         </div>
       </a>
     </div>

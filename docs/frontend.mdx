@@ -9,7 +9,7 @@ import {
   CSSFrame, ExploreFrontendTechnologies, FrontendDevelopmentBuildTools,
   HttpRequest,
   JavaScriptFrame, JavaScriptFunctionLibrary,
-  JavaScriptTestFrame, MobileEndFrame,
+  JavaScriptTestFrame, MobileEndFrame, PackageManager, RealTimeCommunicationFrame,
   ThreeMusketeers, UIComponentsLibrary, WebGLJavaScriptLibrary
 } from "../src/data";
 
@@ -20,6 +20,8 @@ import {
 <NavigationList title="JavaScript框架" dataSource={JavaScriptFrame}/>
 
 <NavigationList title="JavaScript函数库" dataSource={JavaScriptFunctionLibrary}/>
+
+<NavigationList title="WebSocket实时通讯框架" dataSource={RealTimeCommunicationFrame}/>
 
 <NavigationList title="网络请求技术" dataSource={HttpRequest}/>
 
@@ -36,5 +38,7 @@ import {
 <NavigationList title="移动端框架" dataSource={MobileEndFrame}/>
 
 <NavigationList title="UI组件库" dataSource={UIComponentsLibrary}/>
+
+<NavigationList title="包管理器" dataSource={PackageManager}/>
 
 <NavigationList title="探索前端技术" dataSource={ExploreFrontendTechnologies}/>

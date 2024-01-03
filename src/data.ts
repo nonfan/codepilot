@@ -62,6 +62,25 @@ import DaySvg from "@site/src/assets/icons/DaySvg";
 import MochaSvg from "@site/src/assets/icons/MochaSvg";
 import GSAPSvg from "@site/src/assets/icons/GSAPSvg";
 import ChaiSvg from "@site/src/assets/icons/ChaiSvg";
+import FetchSvg from "@site/src/assets/icons/FetchSvg";
+import WebSocketSvg from "@site/src/assets/icons/WebSocketSvg";
+import WebAssemblySvg from "@site/src/assets/icons/WebAssemblySvg";
+import NpmSvg from "@site/src/assets/icons/NpmSvg";
+import YarnSvg from "@site/src/assets/icons/YarnSvg";
+import SailsSvg from "@site/src/assets/icons/SailsSvg";
+import MongoDBSvg from "@site/src/assets/icons/MongoDBSvg";
+import MySQLSvg from "@site/src/assets/icons/MySQLSvg";
+import PostgreSQL from "@site/src/assets/icons/PostgreSQL";
+import Redis from "@site/src/assets/icons/Redis";
+import SQLiteSvg from "@site/src/assets/icons/SQLiteSvg";
+import AdonisSvg from "@site/src/assets/icons/AdonisSvg";
+import MongooseSvg from "@site/src/assets/icons/MongooseSvg";
+import NodemailerSvg from "@site/src/assets/icons/NodemailerSvg";
+import NodeFetchSvg from "@site/src/assets/icons/NodeFetchSvg";
+import PassportSvg from "@site/src/assets/icons/PassportSvg";
+import JsonWebTokenSvg from "@site/src/assets/icons/JsonWebTokenSvg";
+import MulterSvg from "@site/src/assets/icons/MulterSvg";
+import SharpSvg from "@site/src/assets/icons/SharpSvg";
 
 /**
  * 前端三剑客
@@ -229,7 +248,7 @@ const HttpRequest: Navigations = [
     smallTitle:
       "Fetch 是一种用于在浏览器中进行网络请求的现代 API。它提供了一种更强大和灵活的方式来发起 HTTP 请求，替代了传统的 XMLHttpRequest。Fetch API 使用 Promise 对象，使得异步代码更加清晰和易于处理。",
     url: "https://agoodbook.github.io/fetch/",
-    icon: "Fetch",
+    icon: FetchSvg,
   },
   {
     title: "JQuery-Http",
@@ -463,6 +482,26 @@ const UIComponentsLibrary: Navigations = [
 ];
 
 /**
+ * 包管理器
+ */
+const PackageManager: Navigations = [
+  {
+    title: "NPM",
+    smallTitle:
+      "npm（Node Package Manager）是用于Node.js平台的包管理工具。它是一个强大的工具，用于查找、安装、分享和管理JavaScript代码的包或模块。npm是Node.js的默认包管理器，随同Node.js一同安装。",
+    url: "https://agoodbook.github.io/npm/",
+    icon: NpmSvg,
+  },
+  {
+    title: "Yarn",
+    smallTitle:
+      "Yarn 是一个用于管理 JavaScript 依赖关系的包管理工具，它提供了与 npm 类似的功能，但在某些方面进行了改进。Yarn 的目标是提供更快、可靠和安全的依赖管理工具。",
+    url: "https://agoodbook.github.io/yarn/",
+    icon: YarnSvg,
+  },
+];
+
+/**
  * 探索前端技术
  */
 const ExploreFrontendTechnologies: Navigations = [
@@ -480,22 +519,36 @@ const ExploreFrontendTechnologies: Navigations = [
     url: "https://agoodbook.github.io/graphql/",
     icon: GraphQLSvg,
   },
+  {
+    title: "WebAssembly",
+    smallTitle:
+      "WebAssembly（简称Wasm）是一种开放标准，旨在为Web浏览器提供一种可移植、高性能的二进制格式。它是一种可供浏览器中执行的低级别的虚拟机（VM）字节码，可以在现代Web浏览器中运行，并且不依赖于特定的编程语言。",
+    url: "https://agoodbook.github.io/web-assembly/",
+    icon: WebAssemblySvg,
+  },
+];
+
+/**
+ * WebSocket实时通讯框架
+ */
+const RealTimeCommunicationFrame: Navigations = [
+  {
+    title: "WebSockets",
+    smallTitle:
+      "原生的WebSockets API，可以直接在现代浏览器中使用，提供实时双向通信的能力。",
+    url: "https://agoodbook.github.io/websockets/",
+    icon: WebSocketSvg,
+  },
+  {
+    title: "Socket.io",
+    smallTitle:
+      "Socket.io 是一个流行的 JavaScript 库，用于实现实时、双向通信。它可以在浏览器和服务器之间建立持久的连接，支持 WebSocket 协议以及其他实时通信协议，如轮询。Socket.io 主要用于构建实时的 Web 应用程序，如聊天应用、实时协作工具等",
+    url: "https://agoodbook.github.io/socket.io/",
+    icon: SocketIoSvg,
+  },
 ];
 
 /*************************************************前端与后端数据源分界线**************************************************/
-
-/**
- * 爬虫技术
- */
-const ReptileTechnology: Navigations = [
-  {
-    title: "Python",
-    smallTitle:
-      "Python是一种通用、高级、解释型编程语言。它并不局限于特定的技术领域，而是被广泛应用于多个领域。",
-    url: "https://agoodbook.github.io/python/",
-    icon: PythonSvg,
-  },
-];
 
 /**
  * Javascript 运行环境
@@ -563,18 +616,19 @@ const NodeJSBackendFrame: Navigations = [
     url: "https://agoodbook.github.io/fastify/",
     icon: FastifySvg,
   },
-];
-
-/**
- * Socket框架
- */
-const SocketFrame: Navigations = [
   {
-    title: "Socket.io",
+    title: "Sails.js",
     smallTitle:
-      "Socket.io 是一个流行的 JavaScript 库，用于实现实时、双向通信。它可以在浏览器和服务器之间建立持久的连接，支持 WebSocket 协议以及其他实时通信协议，如轮询。Socket.io 主要用于构建实时的 Web 应用程序，如聊天应用、实时协作工具等",
-    url: "https://agoodbook.github.io/socket.io/",
-    icon: SocketIoSvg,
+      "Sails.js 是一个基于 Node.js 的 MVC（Model-View-Controller）框架，专注于简化构建实时Web应用程序的过程。Sails.js 提供了对实时功能的内置支持，包括WebSocket的自动集成，使得构建实时Web应用变得更加容易。",
+    url: "https://agoodbook.github.io/sails.js/",
+    icon: SailsSvg,
+  },
+  {
+    title: "Adonis.js",
+    smallTitle:
+      "Adonis.js是一个全栈MVC框架，提供强大的命令行工具、ORM、自动化测试和安全性功能，鼓励异步编程，支持插件系统和GraphQL，使得构建现代化、可扩展的Web应用变得简单而高效。",
+    url: "https://agoodbook.github.io/adonis.js/",
+    icon: AdonisSvg,
   },
 ];
 
@@ -603,9 +657,77 @@ const DataBaseORMRFrame: Navigations = [
     url: "https://agoodbook.github.io/sequelize/",
     icon: SequelizeSvg,
   },
+  {
+    title: "Mongoose",
+    smallTitle:
+      "Mongoose 是一个在 Node.js 环境中操作 MongoDB 数据库的官方 ODM（Object Data Modeling）库，它简化了 MongoDB 数据库的交互和管理，提供了强大的模型定义、查询构建和中间件支持，使开发者能够更轻松地使用 MongoDB 存储和操作数据。",
+    url: "https://agoodbook.github.io/mongoose/",
+    icon: MongooseSvg,
+  },
+];
+
+/**
+ * 常用的Node.js库
+ */
+const CommonNodeJsLibraries: Navigations = [
+  {
+    title: "Nodemailer",
+    smallTitle:
+      "Nodemailer 是一个强大的 Node.js 库，专门用于发送电子邮件。它提供了灵活的 API，支持附件、HTML 内容、多种传输方式，以及各种邮件服务商的集成。无论是构建简单的文本邮件还是复杂的HTML邮件，Nodemailer都是一个可靠且广泛使用的工具，使得在 Node.js 环境中轻松实现邮件发送功能成为可能。",
+    url: "https://agoodbook.github.io/nodemailer/",
+    icon: NodemailerSvg,
+  },
+  {
+    title: "Node-Fetch",
+    smallTitle:
+      "node-fetch 是一个用于发起 HTTP 请求的 Node.js 模块，它与浏览器中的 fetch API 类似。它简化了在 Node.js 环境中进行网络请求的过程，支持 Promise，提供了简洁而现代的 API，适用于获取和处理 HTTP 响应。通过使用 node-fetch，您可以轻松地执行 GET、POST 等各种 HTTP 请求，并处理返回的数据。",
+    url: "https://agoodbook.github.io/node-fetch/",
+    icon: NodeFetchSvg,
+  },
+  {
+    title: "Passport",
+    smallTitle:
+      "Passport 是一个用于 Node.js 的身份验证中间件，它设计简洁、灵活，用于处理用户身份验证和授权的流程。Passport 提供了一个插件式的体系结构，允许开发者选择并配置适合其应用程序需求的身份验证策略，如本地用户名密码、OAuth、OpenID 等。通过使用 Passport，开发者可以轻松地集成和管理用户身份验证，使其应用程序更安全且易于扩展。",
+    url: "https://agoodbook.github.io/passport/",
+    icon: PassportSvg,
+  },
+  {
+    title: "JsonWebToken",
+    smallTitle:
+      "JSON Web Token（JWT）是一种开放标准（RFC 7519），用于在各方之间安全地传输信息。它是一种紧凑的、自包含的方式，可以在用户和服务之间传递声明。JWT通常用于身份验证和信息交换，被广泛应用于 Web 开发领域。一个JWT包含了经过签名的声明，可以被验证和解码，以确保信息的完整性和来源可信。JWT的结构由三个部分组成：Header、Payload 和 Signature。 Header 和 Payload 使用 Base64 进行编码，然后通过一个点号连接在一起，最后添加签名，形成 JWT。 JWT的签名可以使用密钥进行验证，确保 JWT 的内容没有被篡改。",
+    url: "https://agoodbook.github.io/json-web-token/",
+    icon: JsonWebTokenSvg,
+  },
+  {
+    title: "Sharp",
+    smallTitle:
+      "Sharp 是一个高性能的图像处理库，专为 Node.js 设计。它支持快速的图像调整大小、裁剪、旋转、滤镜应用等操作，并在处理大型图像时表现出色。Sharp 基于 libvips（一个用于图像处理的开源库），提供简单而强大的 API，使开发者能够轻松地集成图像处理功能到他们的应用程序中。",
+    url: "https://agoodbook.github.io/sharp/",
+    icon: SharpSvg,
+  },
+  {
+    title: "Multer",
+    smallTitle:
+      "Multer 是一个用于处理 Node.js 中文件上传的中间件。它能够解析并处理来自 HTML 表单的文件上传请求，支持单个文件或多个文件的同时上传。Multer 提供了易于使用的 API，允许您定义文件的存储位置、文件命名规则以及文件类型的限制。通过 Multer，您可以方便地将文件上传功能集成到 Express.js 应用程序中。",
+    url: "https://agoodbook.github.io/multer/",
+    icon: MulterSvg,
+  },
 ];
 
 /*************************************************全栈技术**************************************************/
+
+/**
+ * 爬虫技术
+ */
+const ReptileTechnology: Navigations = [
+  {
+    title: "Python",
+    smallTitle:
+      "Python是一种通用、高级、解释型编程语言。它并不局限于特定的技术领域，而是被广泛应用于多个领域。",
+    url: "https://agoodbook.github.io/python/",
+    icon: PythonSvg,
+  },
+];
 
 /**
  * 桌面应用程序开发框架
@@ -620,12 +742,54 @@ const DesktopAppFramework: Navigations = [
   },
 ];
 
+/**
+ * 数据库
+ */
+
+const Databases: Navigations = [
+  {
+    title: "MongoDB",
+    smallTitle:
+      "MongoDB是一种NoSQL文档型数据库，以其灵活的数据模型和便于水平扩展而闻名。它适用于大量文档的存储和查询，特别在Web应用和大数据领域广泛使用。",
+    url: "https://agoodbook.github.io/mongodb/",
+    icon: MongoDBSvg,
+  },
+  {
+    title: "MySQL",
+    smallTitle:
+      "MySQL是一种开源的关系型数据库管理系统（RDBMS），在Web应用和企业应用中得到广泛应用。它支持SQL查询语言，具有稳定性和可靠性。",
+    url: "https://agoodbook.github.io/mysql/",
+    icon: MySQLSvg,
+  },
+  {
+    title: "PostgreSQL",
+    smallTitle:
+      "PostgreSQL是一种强大的开源关系型数据库系统，具有高度的可扩展性和支持复杂的数据类型。它在数据安全性和完整性方面有很强的特性，适用于各种应用场景。",
+    url: "https://agoodbook.github.io/postgresql/",
+    icon: PostgreSQL,
+  },
+  {
+    title: "Redis",
+    smallTitle:
+      "Redis是一种开源的键值对存储数据库，常用作缓存系统和消息队列。由于其高性能、低延迟和支持多种数据结构，Redis在大规模分布式系统中得到广泛使用。",
+    url: "https://agoodbook.github.io/redis/",
+    icon: Redis,
+  },
+  {
+    title: "SQLite",
+    smallTitle:
+      "QLite是一种嵌入式关系型数据库引擎，具有轻量级和零配置的特点。由于其小巧的体积和易于集成，SQLite在移动应用和嵌入式系统中得到广泛使用。",
+    url: "https://agoodbook.github.io/sqlite/",
+    icon: SQLiteSvg,
+  },
+];
+
 const AllItem: Navigations = [
   ...ThreeMusketeers,
   ...ReptileTechnology,
   ...JavaScriptFrame,
   ...NodeJSBackendFrame,
-  ...SocketFrame,
+  ...RealTimeCommunicationFrame,
   ...HttpRequest,
   ...JavaScriptTestFrame,
   ...DataBaseORMRFrame,
@@ -639,9 +803,13 @@ const AllItem: Navigations = [
   ...DesktopAppFramework,
   ...ExploreFrontendTechnologies,
   ...JavaScriptFunctionLibrary,
+  ...PackageManager,
+  ...Databases,
+  ...CommonNodeJsLibraries,
 ];
 
-const RandomItem: Navigations = getRandomElements(AllItem, 6);
+// const RandomItem: Navigations = getRandomElements(AllItem, 6);
+const RandomItem: Navigations = AllItem;
 
 export {
   RandomItem,
@@ -649,7 +817,7 @@ export {
   ReptileTechnology,
   JavaScriptFrame,
   NodeJSBackendFrame,
-  SocketFrame,
+  RealTimeCommunicationFrame,
   HttpRequest,
   JavaScriptTestFrame,
   DataBaseORMRFrame,
@@ -663,4 +831,7 @@ export {
   DesktopAppFramework,
   ExploreFrontendTechnologies,
   JavaScriptFunctionLibrary,
+  PackageManager,
+  Databases,
+  CommonNodeJsLibraries,
 };

@@ -1,6 +1,6 @@
 function TextSvg(props: { text: string }) {
   return (
-    <svg viewBox="0 0 200 200" fill="currentColor">
+    <svg viewBox="0 0 200 200" fill="currentColor" className="scale2">
       <text
         textAnchor="middle"
         alignmentBaseline="middle"
