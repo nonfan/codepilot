@@ -29,10 +29,10 @@ function Feature(props: NavigationItem) {
     window.open(url, "_blank");
   };
 
+  /**
+   * 必须添加container用于指定 CSS 样式注入的容器，container: Element | ShadowRoot
+   */
   return (
-    /**
-     * 必须添加container用于指定 CSS 样式注入的容器，container: Element | ShadowRoot
-     */
     <StyleProvider container={homepageFeatures}>
       <div
         className={clsx("col col--4 pointer homepage-features")}
