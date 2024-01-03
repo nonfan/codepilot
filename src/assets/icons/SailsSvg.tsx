@@ -4,7 +4,6 @@ function SailsSvg() {
       <path
         d="M95.186 1024S-296.514 401.098 509.27 0v1024H95.186M634 1024V388l390 636H634"
         fill="#38ACC2"
-        p-id="6180"
       ></path>
     </svg>
   );

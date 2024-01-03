@@ -15,7 +15,6 @@ import TypeScriptSvg from "@site/src/assets/icons/TypeScriptSvg";
 import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
 import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
 import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
-import { getRandomElements } from "@site/src/utils";
 import HttpSvg from "@site/src/assets/icons/HttpSvg";
 import JestSvg from "@site/src/assets/icons/JestSvg";
 import PrismaSvg from "@site/src/assets/icons/PrismaSvg";
@@ -784,35 +783,7 @@ const Databases: Navigations = [
   },
 ];
 
-const AllItem: Navigations = [
-  ...ThreeMusketeers,
-  ...ReptileTechnology,
-  ...JavaScriptFrame,
-  ...NodeJSBackendFrame,
-  ...RealTimeCommunicationFrame,
-  ...HttpRequest,
-  ...JavaScriptTestFrame,
-  ...DataBaseORMRFrame,
-  ...CSSFrame,
-  ...FrontendDevelopmentBuildTools,
-  ...ChartTools,
-  ...WebGLJavaScriptLibrary,
-  ...JavaScriptRuntimeEnvironment,
-  ...MobileEndFrame,
-  ...UIComponentsLibrary,
-  ...DesktopAppFramework,
-  ...ExploreFrontendTechnologies,
-  ...JavaScriptFunctionLibrary,
-  ...PackageManager,
-  ...Databases,
-  ...CommonNodeJsLibraries,
-];
-
-// const RandomItem: Navigations = getRandomElements(AllItem, 6);
-const RandomItem: Navigations = AllItem;
-
 export {
-  RandomItem,
   ThreeMusketeers,
   ReptileTechnology,
   JavaScriptFrame,

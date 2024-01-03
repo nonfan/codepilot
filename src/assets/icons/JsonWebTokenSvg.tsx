@@ -7,9 +7,9 @@ function JsonWebTokenSvg() {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="jwt_logo" transform="translate(-150.000000, -538.000000)">
           <g id="Group" transform="translate(0.000000, 413.000000)">

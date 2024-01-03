@@ -2,9 +2,10 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import React, { useEffect, useState } from "react";
-import { RandomItem } from "@site/src/data";
 import { NavigationItem, Navigations } from "@site/src";
+import * as AllNavigation from "@site/src/data";
 import TextSvg from "@site/src/assets/icons/TextSvg";
+import { getRandomElements } from "@site/src/utils";
 
 function Feature(props: NavigationItem) {
   const { title, smallTitle, url, icon } = props;
@@ -39,8 +40,23 @@ function Feature(props: NavigationItem) {
 export default function HomepageFeatures(): JSX.Element {
   const [featureList, setFeatureList] = useState<Navigations>([]);
 
+  /**
+   * 获取随机的6项导航条：需要遍历AllNavigation对象，存储到一个数组内
+   * 存在问题：遍历需要时间，若每次刷新都需要经过这个时间，会影响体验
+   */
+  function setRandomListToFeatureList() {
+    let all = [];
+    Object.keys(AllNavigation).forEach((key) => {
+      all = all.concat(AllNavigation[key]);
+    });
+
+    let randomList = getRandomElements(all, 6);
+
+    setFeatureList(randomList);
+  }
+
   useEffect(() => {
-    setFeatureList(RandomItem);
+    setRandomListToFeatureList();
   }, []);
 
   return (
