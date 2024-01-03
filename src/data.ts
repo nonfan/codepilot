@@ -336,6 +336,13 @@ const CSSFrame: Navigations = [
     url: "https://agoodbook.github.io/purgecss/",
     icon: PurgeCssSvg,
   },
+  {
+    title: "CLSX",
+    smallTitle:
+      "clsx 是一个用于生成动态 CSS 类名的 JavaScript 工具库。它提供了一种简便的方式来根据条件和参数动态生成 CSS 类名，特别适用于 React 或其它前端框架中动态处理类名的场景。",
+    url: "https://agoodbook.github.io/clsx/",
+    icon: "CLSX",
+  },
 ];
 
 /**
