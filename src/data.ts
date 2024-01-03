@@ -80,6 +80,9 @@ import PassportSvg from "@site/src/assets/icons/PassportSvg";
 import JsonWebTokenSvg from "@site/src/assets/icons/JsonWebTokenSvg";
 import MulterSvg from "@site/src/assets/icons/MulterSvg";
 import SharpSvg from "@site/src/assets/icons/SharpSvg";
+import DockerSvg from "@site/src/assets/icons/DockerSvg";
+import NginxSvg from "@site/src/assets/icons/NginxSvg";
+import LinuxSvg from "@site/src/assets/icons/LinuxSvg";
 
 /**
  * 前端三剑客
@@ -787,6 +790,33 @@ const Databases: Navigations = [
       "QLite是一种嵌入式关系型数据库引擎，具有轻量级和零配置的特点。由于其小巧的体积和易于集成，SQLite在移动应用和嵌入式系统中得到广泛使用。",
     url: "https://agoodbook.github.io/sqlite/",
     icon: SQLiteSvg,
+  },
+];
+
+/**
+ * 服务器端技术
+ */
+export const ServerSideTechnology: Navigations = [
+  {
+    title: "Docker",
+    smallTitle:
+      "Docker是一种轻量级的容器化平台，允许开发者将应用程序和所有依赖项打包到一个独立的容器中。这个容器可以在任何支持Docker的环境中运行，提供了一致性、可移植性和高效性，简化了应用程序的开发、测试和部署过程。",
+    url: "https://agoodbook.github.io/docker/",
+    icon: DockerSvg,
+  },
+  {
+    title: "Nginx",
+    smallTitle:
+      "Nginx（发音为engine-x）是一个高性能的开源Web服务器和反向代理服务器。它设计简洁、轻量级，以高效地处理并发连接而闻名。Nginx不仅用于提供静态内容，还可作为反向代理，将客户端请求转发给后端的应用服务器。其灵活性、可扩展性和卓越的性能使其成为许多Web应用和服务的首选服务器。",
+    url: "https://agoodbook.github.io/nginx/",
+    icon: NginxSvg,
+  },
+  {
+    title: "Linux",
+    smallTitle:
+      "Linux是一种开源的、多用户、多任务、支持多种硬件架构的操作系统内核。它以稳定性、安全性和灵活性著称，广泛用于服务器、嵌入式系统和个人计算机。 Linux系统采用UNIX风格的设计，具有强大的命令行界面，同时支持图形用户界面，例如GNOME和KDE。 Linux操作系统的核心思想是开源合作，用户可以自由使用、修改和分发Linux。",
+    url: "https://agoodbook.github.io/linux/",
+    icon: LinuxSvg,
   },
 ];
 

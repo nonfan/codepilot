@@ -26,7 +26,9 @@ function Feature(props: NavigationItem) {
   };
 
   const handleOpen = (url: string) => {
-    window.open(url, "_blank");
+    if (url) {
+      window.open(url, "_blank");
+    }
   };
 
   /**
