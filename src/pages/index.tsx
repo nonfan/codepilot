@@ -32,7 +32,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -45,4 +45,9 @@ export default function Home(): JSX.Element {
       </main>
     </Layout>
   );
+}
+
+import BrowserOnly from "@docusaurus/BrowserOnly";
+export default function () {
+  return <BrowserOnly>{() => <Home />}</BrowserOnly>;
 }

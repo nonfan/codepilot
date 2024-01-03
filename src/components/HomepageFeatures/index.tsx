@@ -7,10 +7,12 @@ import * as AllNavigation from "@site/src/data";
 import TextSvg from "@site/src/assets/icons/TextSvg";
 import { getRandomElements } from "@site/src/utils";
 import { Skeleton } from "antd";
+import { StyleProvider } from "@ant-design/cssinjs";
 
 function Feature(props: NavigationItem) {
   const { title, smallTitle, url, icon } = props;
 
+  const homepageFeatures = document.querySelector(".homepage-features");
   const renderIcon = () => {
     if (typeof icon === "string") {
       return <TextSvg text={icon} />;
@@ -28,21 +30,29 @@ function Feature(props: NavigationItem) {
   };
 
   return (
-    <div className={clsx("col col--4 pointer")} onClick={() => handleOpen(url)}>
-      <div className="navigation-item">
-        {props.title ? renderIcon() : <Skeleton.Image />}
+    /**
+     * 必须添加container用于指定 CSS 样式注入的容器，container: Element | ShadowRoot
+     */
+    <StyleProvider container={homepageFeatures}>
+      <div
+        className={clsx("col col--4 pointer homepage-features")}
+        onClick={() => handleOpen(url)}
+      >
+        <div className="navigation-item">
+          {props.title ? renderIcon() : <Skeleton.Image />}
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Skeleton
+            loading={Boolean(!props.title)}
+            paragraph={{ rows: 3 }}
+            title={false}
+          >
+            <Heading as="h3">{title}</Heading>
+            <p className="ellipsis">{smallTitle}</p>
+          </Skeleton>
+        </div>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Skeleton
-          loading={Boolean(!props.title)}
-          paragraph={{ rows: 3 }}
-          title={false}
-        >
-          <Heading as="h3">{title}</Heading>
-          <p className="ellipsis">{smallTitle}</p>
-        </Skeleton>
-      </div>
-    </div>
+    </StyleProvider>
   );
 }
 
