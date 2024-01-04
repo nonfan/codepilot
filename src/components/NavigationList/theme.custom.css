@@ -4,7 +4,7 @@
   --contexify-menu-padding: 6px;
   --contexify-menu-radius: 6px;
   --contexify-menu-bgColor: #fff;
-  --contexify-menu-shadow: 1px 2px 2px rgba(0, 0, 0, .1), 2px 4px 4px rgba(0, 0, 0, .1), 3px 6px 6px rgba(0, 0, 0, .1);
+  --contexify-menu-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --contexify-menu-negatePadding: var(--contexify-menu-padding);
   --contexify-separator-color: rgba(0, 0, 0, .2);
   --contexify-separator-margin: 5px;
@@ -20,6 +20,7 @@
 }
 
 [data-theme="dark"] {
+  --contexify-menu-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   --contexify-menu-bgColor: #0e0e13;
   --contexify-separator-color: #4c4c4c;
   --contexify-item-color: #fff;

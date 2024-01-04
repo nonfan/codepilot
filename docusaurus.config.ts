@@ -45,14 +45,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/${username}/${repo}/tree/main`,
           lastVersion: "current",
           versions: {
             current: {
-              label: "最新",
-              path: "next",
+              label: "5.x",
             },
             "4.0.0": {
               label: "4.0.0",
@@ -108,14 +105,15 @@ const config: Config = {
       },
       items: [
         {
-          to: "docs/next", // 点击后跳转的链接，站内跳转用 to ,站外用 href
-          activeBasePath: "docs", // 根据它显示当前高亮
-          label: "文档", // 显示的名称
-          position: "left", // 显示在导航的 左边 还是 右边
+          type: "doc",
+          position: "left",
+          docId: "started",
+          label: "文档",
         },
-        { to: "docs/next/frontend", label: "前端", position: "left" },
-        { to: "docs/next/backend", label: "后端", position: "left" },
-        { to: "docs/next/full-stack", label: "全栈", position: "left" },
+        { to: "docs/frontend", label: "前端", position: "left" },
+        { to: "docs/backend", label: "后端", position: "left" },
+        { to: "docs/full-stack", label: "全栈", position: "left" },
+        { to: "docs/storeroom", label: "杂物库", position: "right" },
         //   right
         {
           type: "search",

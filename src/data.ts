@@ -83,6 +83,7 @@ import SharpSvg from "@site/src/assets/icons/SharpSvg";
 import DockerSvg from "@site/src/assets/icons/DockerSvg";
 import NginxSvg from "@site/src/assets/icons/NginxSvg";
 import LinuxSvg from "@site/src/assets/icons/LinuxSvg";
+import NextraSvg from "@site/src/assets/icons/NextraSvg";
 
 /**
  * 前端三剑客
@@ -761,7 +762,6 @@ const DesktopAppFramework: Navigations = [
 /**
  * 数据库
  */
-
 const Databases: Navigations = [
   {
     title: "MongoDB",
@@ -824,6 +824,19 @@ export const ServerSideTechnology: Navigations = [
       "Linux是一种开源的、多用户、多任务、支持多种硬件架构的操作系统内核。它以稳定性、安全性和灵活性著称，广泛用于服务器、嵌入式系统和个人计算机。 Linux系统采用UNIX风格的设计，具有强大的命令行界面，同时支持图形用户界面，例如GNOME和KDE。 Linux操作系统的核心思想是开源合作，用户可以自由使用、修改和分发Linux。",
     url: "https://agoodbook.github.io/linux/",
     icon: LinuxSvg,
+  },
+];
+
+/**
+ * 静态站点生成器
+ */
+export const StaticSiteGenerator: Navigations = [
+  {
+    title: "Nextra",
+    smallTitle:
+      "Nextra 是一个基于 Next.js 的静态站点生成器，专注于构建文档站点。Nextra 的目标是提供简单、易用且灵活的文档生成解决方案。",
+    url: "https://agoodbook.github.io/nextra-docs/",
+    icon: NextraSvg,
   },
 ];
 
