@@ -94,6 +94,13 @@ const ThreeMusketeers: Navigations = [
       "HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。",
     url: "https://agoodbook.github.io/html/",
     icon: HtmlSvg,
+    contextMenu: [
+      {
+        title: "官方文档",
+        url: "https://www.baidu.com",
+        action: "see-to-website",
+      },
+    ],
   },
   {
     title: "CSS",

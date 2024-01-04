@@ -1,13 +1,24 @@
-import "./index.scss";
 import { NavigationItem, Navigations } from "@site/src";
 import TextSvg from "@site/src/assets/icons/TextSvg";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import {
+  Menu,
+  Item,
+  useContextMenu,
+  Separator,
+  Submenu,
+  RightSlot,
+} from "react-contexify";
+import { ContextMenu } from "@site/src/index";
+import "./index.scss";
+import "./theme.custom.css";
+import SettingSvg from "@site/src/assets/icons/SettingSvg";
+import TipSvg from "@site/src/assets/icons/TipSvg";
 
 interface Props {
   dataSource: Navigations;
   title: string;
 }
-
 function NavTitle(props: { title: string }) {
   return (
     <div className="tag-container">
@@ -30,7 +41,39 @@ function NavTitle(props: { title: string }) {
 }
 
 function NavBar(props: { navigationItem: NavigationItem }) {
-  const { title, smallTitle, icon, url } = props.navigationItem;
+  const {
+    title,
+    smallTitle,
+    icon,
+    url,
+    contextMenu = [],
+  } = props.navigationItem;
+
+  const commonMenu: ContextMenu[] = [
+    {
+      title: "简介",
+      icon: TipSvg,
+      action: "see-to-desc",
+    },
+    {
+      title: "设置",
+      icon: SettingSvg,
+      action: "open-setting",
+    },
+  ];
+
+  const { show } = useContextMenu({
+    id: url,
+  });
+
+  function handleContextMenu(event: any) {
+    show({
+      event,
+      props: {
+        key: "value",
+      },
+    });
+  }
 
   const renderIcon = () => {
     if (typeof icon === "string") {
@@ -44,8 +87,29 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     return <TextSvg text="Logo" />;
   };
 
+  const handleMenuItemOnClick = (item: ContextMenu) => {
+    if (item.action === "see-to-website") {
+      return window.open(item.url, "_blank");
+    }
+
+    if (item.action === "see-to-desc") {
+      console.log("查看简介");
+      return;
+    }
+
+    if (item.action === "open-setting") {
+      console.log("打开设置");
+      return;
+    }
+
+    if (item.action === "other") {
+      console.log("其它操作");
+      return;
+    }
+  };
+
   return (
-    <div className="box">
+    <div className="box" onContextMenu={handleContextMenu}>
       <a href={url} target="_blank" className="content border">
         <div className="navbar-icon">{renderIcon()}</div>
         <div className="desc">
@@ -53,6 +117,17 @@ function NavBar(props: { navigationItem: NavigationItem }) {
           <div className="small ellipsis">{smallTitle}</div>
         </div>
       </a>
+
+      <Menu id={url} animation="scale">
+        {[...contextMenu, ...commonMenu].map((item) => {
+          return (
+            <Item key={item.title} onClick={() => handleMenuItemOnClick(item)}>
+              {item.title}
+              <RightSlot>{item.icon ? <item.icon /> : null}</RightSlot>
+            </Item>
+          );
+        })}
+      </Menu>
     </div>
   );
 }
