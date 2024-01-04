@@ -5,7 +5,6 @@ import { Menu, Item, useContextMenu, RightSlot } from "react-contexify";
 import SettingSvg from "@site/src/assets/icons/SettingSvg";
 import TipSvg from "@site/src/assets/icons/TipSvg";
 import "./index.scss";
-import "./theme.custom.css";
 
 interface Props {
   dataSource: Navigations;
