@@ -1,19 +1,11 @@
-import { NavigationItem, Navigations } from "@site/src";
+import React from "react";
+import { ContextMenu, NavigationItem, Navigations } from "@site/src";
 import TextSvg from "@site/src/assets/icons/TextSvg";
-import React, { useEffect, useState } from "react";
-import {
-  Menu,
-  Item,
-  useContextMenu,
-  Separator,
-  Submenu,
-  RightSlot,
-} from "react-contexify";
-import { ContextMenu } from "@site/src/index";
-import "./index.scss";
-import "./theme.custom.css";
+import { Menu, Item, useContextMenu, RightSlot } from "react-contexify";
 import SettingSvg from "@site/src/assets/icons/SettingSvg";
 import TipSvg from "@site/src/assets/icons/TipSvg";
+import "./index.scss";
+import "./theme.custom.css";
 
 interface Props {
   dataSource: Navigations;

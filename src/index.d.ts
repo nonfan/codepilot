@@ -6,7 +6,7 @@ interface Children {
   url: string;
 }
 
-interface ContextMenu {
+export interface ContextMenu {
   title: string;
   url?: string;
   icon?: React.FC;
