@@ -125,6 +125,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
         open={isShowDesc}
         className="tooltip"
         color={handleTooltipColor()}
+        overlayClassName="navbar-tooltip"
       >
         <div className="box" onContextMenu={handleContextMenu}>
           <a href={url} target="_blank" className="content border">

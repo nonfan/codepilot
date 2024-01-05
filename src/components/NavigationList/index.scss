@@ -14,15 +14,19 @@
   --tooltip-color: #a0a1a1;
 }
 
-.tooltip {
-  background-color: var(--tooltip-color-bg);
-  color: var(--color);
-  border-radius: 10px;
-  transition: none !important;
+.navigator-container {
+  .tooltip {
+    background-color: var(--tooltip-color-bg);
+    color: var(--color);
+    border-radius: 10px;
+    transition: none !important;
+  }
 }
 
-.ant-tooltip-inner {
-  color: var(--tooltip-color) !important;
+.navbar-tooltip {
+  .ant-tooltip-inner {
+    color: var(--tooltip-color) !important;
+  }
 }
 
 .color {
