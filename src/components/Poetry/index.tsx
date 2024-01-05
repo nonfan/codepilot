@@ -62,7 +62,11 @@ export default function Poetry() {
             className="hitokoto"
             onClick={handleCopyHitokoto}
           >
-            <Tooltip color="#2db7f5" placement="top" title="点击复制">
+            <Tooltip
+              color="var(--ifm-color-primary)"
+              placement="top"
+              title="点击复制"
+            >
               「 {info.poetry}」
             </Tooltip>
             <div
