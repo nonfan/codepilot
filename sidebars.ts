@@ -12,6 +12,15 @@ const sidebars: SidebarsConfig = {
       id: "guide",
       label: "指南",
     },
+    {
+      type: "category",
+      label: "前端插件库",
+      collapsed: false,
+      link: {
+        type: "generated-index", // 生成菜单列表
+      },
+      items: ["plugin-library/nprogress", "plugin-library/rich-text-editor"],
+    },
   ],
 };
 
