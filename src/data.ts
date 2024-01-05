@@ -87,6 +87,7 @@ import NextraSvg from "@site/src/assets/icons/NextraSvg";
 import javaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
 import ScrapySvg from "@site/src/assets/icons/ScrapySvg";
 import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
+import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
 
 /**
  * 前端三剑客
@@ -746,6 +747,13 @@ export const GoldenHouse: Navigations = [
       "重构（Refactoring）是指对现有代码进行调整和修改，以改善其结构、可读性、可维护性，而不改变其外部行为。在 JavaScript 中，重构是一个常见的实践，旨在提高代码质量和开发效率。",
     url: "https://agoodbook.github.io/javascript-refactor/",
     icon: javaScriptSvg,
+  },
+  {
+    title: "数据结构与算法",
+    smallTitle:
+      "数据结构（Data Structure）是计算机中存储、组织数据的方式。数据结构是一种具有一定逻辑关系，在计算机中应用某种存储结构，并且封装了相应操作的数据元素集合。它包含三方面的内容，逻辑关系、存储关系及操作。不同种类的数据结构适合于不同种类的应用，而部分甚至专门用于特定的作业任务。",
+    url: "https://agoodbook.github.io/data-structurer/",
+    icon: DataStructureSvg,
   },
 ];
 
