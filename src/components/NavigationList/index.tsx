@@ -116,6 +116,11 @@ function NavBar(props: { navigationItem: NavigationItem }) {
   useEffect(() => {
     window.addEventListener("click", () => setIsShowDesc(false));
     window.addEventListener("scroll", () => setIsShowDesc(false));
+
+    return () => {
+      window.removeEventListener("click", () => setIsShowDesc(false));
+      window.removeEventListener("scroll", () => setIsShowDesc(false));
+    };
   }, []);
 
   return (
