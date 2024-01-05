@@ -84,6 +84,9 @@ import DockerSvg from "@site/src/assets/icons/DockerSvg";
 import NginxSvg from "@site/src/assets/icons/NginxSvg";
 import LinuxSvg from "@site/src/assets/icons/LinuxSvg";
 import NextraSvg from "@site/src/assets/icons/NextraSvg";
+import javaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
+import ScrapySvg from "@site/src/assets/icons/ScrapySvg";
+import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
 
 /**
  * 前端三剑客
@@ -734,6 +737,19 @@ const CommonNodeJsLibraries: Navigations = [
 /*************************************************全栈技术**************************************************/
 
 /**
+ * 书中自有黄金屋
+ */
+export const GoldenHouse: Navigations = [
+  {
+    title: "JavaScript之重构",
+    smallTitle:
+      "重构（Refactoring）是指对现有代码进行调整和修改，以改善其结构、可读性、可维护性，而不改变其外部行为。在 JavaScript 中，重构是一个常见的实践，旨在提高代码质量和开发效率。",
+    url: "https://agoodbook.github.io/javascript-refactor/",
+    icon: javaScriptSvg,
+  },
+];
+
+/**
  * 爬虫技术
  */
 const ReptileTechnology: Navigations = [
@@ -743,6 +759,20 @@ const ReptileTechnology: Navigations = [
       "Python是一种通用、高级、解释型编程语言。它并不局限于特定的技术领域，而是被广泛应用于多个领域。",
     url: "https://agoodbook.github.io/python/",
     icon: PythonSvg,
+  },
+  {
+    title: "Scrapy",
+    smallTitle:
+      "Scrapy 是一个基于Python的开源爬虫框架，被广泛用于抓取和提取网站数据。它具有灵活的架构、中间件支持、规则系统等特点。",
+    url: "https://agoodbook.github.io/scrapy/",
+    icon: ScrapySvg,
+  },
+  {
+    title: "Puppeteer",
+    smallTitle:
+      "Puppeteer (Node.js)： Puppeteer 是一个由Google开发的Node.js库，用于控制Headless Chrome或Chromium浏览器。它适用于需要处理JavaScript渲染的爬虫任务。",
+    url: "https://agoodbook.github.io/puppeteer/",
+    icon: PuppeteerSvg,
   },
 ];
 
