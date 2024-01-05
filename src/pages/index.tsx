@@ -6,6 +6,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import HomepageStarted from "@site/src/pages/HomepageStarted";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -46,8 +47,6 @@ function Home(): JSX.Element {
     </Layout>
   );
 }
-
-import BrowserOnly from "@docusaurus/BrowserOnly";
 export default function () {
   return <BrowserOnly>{() => <Home />}</BrowserOnly>;
 }

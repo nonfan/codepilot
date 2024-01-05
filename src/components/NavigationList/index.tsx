@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ContextMenu, NavigationItem, Navigations } from "@site/src";
 import TextSvg from "@site/src/assets/icons/TextSvg";
 import { Menu, Item, useContextMenu, RightSlot } from "react-contexify";
 import SettingSvg from "@site/src/assets/icons/SettingSvg";
 import TipSvg from "@site/src/assets/icons/TipSvg";
+import { Tooltip } from "antd";
+import { StyleProvider } from "@ant-design/cssinjs";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import "./index.scss";
 
 interface Props {
@@ -39,6 +42,8 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     url,
     contextMenu = [],
   } = props.navigationItem;
+
+  const [isShowDesc, setIsShowDesc] = useState(false);
 
   const commonMenu: ContextMenu[] = [
     {
@@ -85,6 +90,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
 
     if (item.action === "see-to-desc") {
       console.log("查看简介");
+      setIsShowDesc(true);
       return;
     }
 
@@ -99,40 +105,71 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     }
   };
 
-  return (
-    <div className="box" onContextMenu={handleContextMenu}>
-      <a href={url} target="_blank" className="content border">
-        <div className="navbar-icon">{renderIcon()}</div>
-        <div className="desc">
-          <div className="title color">{title}</div>
-          <div className="small ellipsis">{smallTitle}</div>
-        </div>
-      </a>
+  function handleTooltipColor() {
+    const theme = document.querySelector("html").dataset["theme"];
+    if (theme === "light") {
+      return "#fff";
+    }
+    return "#2c2e2f";
+  }
 
-      <Menu id={url} animation="scale">
-        {[...contextMenu, ...commonMenu].map((item) => {
-          return (
-            <Item key={item.title} onClick={() => handleMenuItemOnClick(item)}>
-              {item.title}
-              <RightSlot>{item.icon ? <item.icon /> : null}</RightSlot>
-            </Item>
-          );
-        })}
-      </Menu>
-    </div>
+  useEffect(() => {
+    window.addEventListener("click", () => setIsShowDesc(false));
+    window.addEventListener("scroll", () => setIsShowDesc(false));
+  }, []);
+
+  return (
+    <StyleProvider container={document.querySelector(".box")}>
+      <Tooltip
+        title={smallTitle}
+        open={isShowDesc}
+        className="tooltip"
+        color={handleTooltipColor()}
+      >
+        <div className="box" onContextMenu={handleContextMenu}>
+          <a href={url} target="_blank" className="content border">
+            <div className="navbar-icon">{renderIcon()}</div>
+            <div className="desc">
+              <div className="title color">{title}</div>
+              <div className="small ellipsis">{smallTitle}</div>
+            </div>
+          </a>
+
+          <Menu id={url} animation="scale">
+            {[...contextMenu, ...commonMenu].map((item) => {
+              return (
+                <Item
+                  key={item.title}
+                  onClick={() => handleMenuItemOnClick(item)}
+                >
+                  {item.title}
+                  <RightSlot>{item.icon ? <item.icon /> : null}</RightSlot>
+                </Item>
+              );
+            })}
+          </Menu>
+        </div>
+      </Tooltip>
+    </StyleProvider>
   );
 }
 
 export default function NavigationList(props: Props) {
   const { dataSource, title } = props;
   return (
-    <>
-      <NavTitle title={title} />
-      <div className="navigator-container">
-        {dataSource.map((item) => {
-          return <NavBar key={item.url} navigationItem={item} />;
-        })}
-      </div>
-    </>
+    <BrowserOnly>
+      {() => {
+        return (
+          <>
+            <NavTitle title={title} />
+            <div className="navigator-container">
+              {dataSource.map((item) => {
+                return <NavBar key={item.url} navigationItem={item} />;
+              })}
+            </div>
+          </>
+        );
+      }}
+    </BrowserOnly>
   );
 }

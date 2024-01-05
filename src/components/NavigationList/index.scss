@@ -3,11 +3,26 @@
 :root {
   --border-color: #ececec;
   --navigator-container-bg: #fff;
+  --tooltip-color-bg: #fff;
+  --tooltip-color: #2c2b2b;
 }
 
 [data-theme='dark'] {
   --border-color: #282828;
   --navigator-container-bg: #2c2e2f;
+  --tooltip-color-bg: #1b1b1d;
+  --tooltip-color: #a0a1a1;
+}
+
+.tooltip {
+  background-color: var(--tooltip-color-bg);
+  color: var(--color);
+  border-radius: 10px;
+  transition: none !important;
+}
+
+.ant-tooltip-inner {
+  color: var(--tooltip-color) !important;
 }
 
 .color {
