@@ -56,28 +56,26 @@ export default function Poetry() {
       {info.poetry ? (
         <div className="poetry">
           {contextHolder}
-          <Tooltip color="#2db7f5" placement="top" title="点击复制">
-            <div
-              onMouseEnter={() => setIsShowName(true)}
-              onMouseLeave={() => setIsShowName(false)}
-              className="hitokoto"
-              onClick={handleCopyHitokoto}
-            >
+          <div
+            onMouseEnter={() => setIsShowName(true)}
+            onMouseLeave={() => setIsShowName(false)}
+            className="hitokoto"
+            onClick={handleCopyHitokoto}
+          >
+            <Tooltip color="#2db7f5" placement="top" title="点击复制">
               「 {info.poetry}」
-              <div
-                style={{
-                  opacity: isShowName ? 1 : 0,
-                }}
-                className="from"
-              >
-                {info.name || "来源网络"}
-              </div>
+            </Tooltip>
+            <div
+              style={{
+                opacity: isShowName ? 1 : 0,
+              }}
+              className="from"
+            >
+              {info.name || "来源网络"}
             </div>
-          </Tooltip>
+          </div>
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
     </>
   );
 }
