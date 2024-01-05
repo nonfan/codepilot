@@ -72,6 +72,11 @@
   transform: scale(0.5);
 }
 
+.footer__copyright {
+  color: rgb(153, 138, 138);
+  font-size: 14px;
+}
+
 /**
  通用样式
  */
