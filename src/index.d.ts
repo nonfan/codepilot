@@ -9,9 +9,10 @@ interface Children {
 export interface ContextMenu {
   title: string;
   url?: string;
-  icon?: React.FC;
+  icon?: React.FC | string;
   showTip?: boolean;
   action: "see-to-website" | "see-to-desc" | "open-setting" | "other";
+  keyMatcher?: (e: KeyboardEvent) => boolean;
 }
 
 export type NavigationItem = {

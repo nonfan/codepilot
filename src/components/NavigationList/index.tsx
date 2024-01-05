@@ -3,7 +3,6 @@ import { ContextMenu, NavigationItem, Navigations } from "@site/src";
 import TextSvg from "@site/src/assets/icons/TextSvg";
 import { Menu, Item, useContextMenu, RightSlot } from "react-contexify";
 import SettingSvg from "@site/src/assets/icons/SettingSvg";
-import TipSvg from "@site/src/assets/icons/TipSvg";
 import { Tooltip } from "antd";
 import { StyleProvider } from "@ant-design/cssinjs";
 import BrowserOnly from "@docusaurus/BrowserOnly";
@@ -48,8 +47,11 @@ function NavBar(props: { navigationItem: NavigationItem }) {
   const commonMenu: ContextMenu[] = [
     {
       title: "简介",
-      icon: TipSvg,
+      icon: "Ctrl+E",
       action: "see-to-desc",
+      keyMatcher: function (event) {
+        return event.key === "e" && event.ctrlKey;
+      },
     },
     {
       title: "设置",
@@ -89,7 +91,6 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     }
 
     if (item.action === "see-to-desc") {
-      console.log("查看简介");
       setIsShowDesc(true);
       return;
     }
@@ -115,11 +116,9 @@ function NavBar(props: { navigationItem: NavigationItem }) {
 
   useEffect(() => {
     window.addEventListener("click", () => setIsShowDesc(false));
-    window.addEventListener("scroll", () => setIsShowDesc(false));
 
     return () => {
       window.removeEventListener("click", () => setIsShowDesc(false));
-      window.removeEventListener("scroll", () => setIsShowDesc(false));
     };
   }, []);
 
@@ -147,9 +146,14 @@ function NavBar(props: { navigationItem: NavigationItem }) {
                 <Item
                   key={item.title}
                   onClick={() => handleMenuItemOnClick(item)}
+                  keyMatcher={item.keyMatcher}
                 >
                   {item.title}
-                  <RightSlot>{item.icon ? <item.icon /> : null}</RightSlot>
+                  {!item.keyMatcher ? (
+                    <RightSlot>{item.icon ? <item.icon /> : null}</RightSlot>
+                  ) : (
+                    <RightSlot>{item.icon as string}</RightSlot>
+                  )}
                 </Item>
               );
             })}
