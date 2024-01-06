@@ -47,6 +47,9 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           editUrl: `https://github.com/${username}/${repo}/tree/main`,
           lastVersion: "current",
+          remarkPlugins: [
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+          ],
           versions: {
             current: {
               label: "5.x",

@@ -110,7 +110,7 @@ const ThreeMusketeers: Navigations = [
   {
     title: "CSS",
     smallTitle:
-      "CSS，即层叠样式表（Cascading Style Sheets），是一种用于描述HTML或XML（包括SVG或XHTML等XML方言）文档展示样式的语言。",
+      "CSS，即层叠样式表（Cascading NProgressStyle Sheets），是一种用于描述HTML或XML（包括SVG或XHTML等XML方言）文档展示样式的语言。",
     url: "https://agoodbook.github.io/css/",
     icon: CssSvg,
   },
