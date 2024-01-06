@@ -1,4 +1,4 @@
-import { ColorPicker, Slider, Space } from "antd";
+import { ColorPicker, Slider } from "antd";
 import MainComponent from "@site/src/components/CommonComponents/MainComponent";
 import React from "react";
 

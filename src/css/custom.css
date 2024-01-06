@@ -52,8 +52,6 @@
   --ant-slider-rail-hover-bg: var(--code-block-bg) !important;
   --ant-color-text: var(--color) !important;
   --ant-color-border: var(--border) !important;
-  --ant-slider-rail-bg: var(--code-block-bg) !important;
-  --ant-slider-rail-hover-bg: var(--code-block-bg) !important;
 }
 
 #nprogress .bar {

@@ -7,7 +7,6 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import HomepageStarted from "@site/src/pages/HomepageStarted";
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import { ConfigProvider } from "antd";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
