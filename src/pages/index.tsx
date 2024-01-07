@@ -25,7 +25,7 @@ function HomepageHeader() {
             }
             to="/docs/started"
           >
-            <HomepageStarted title="知识库" direction="left" />
+            <HomepageStarted title="Get Started" direction="right" />
           </Link>
         </div>
       </div>
