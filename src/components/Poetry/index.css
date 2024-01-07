@@ -18,6 +18,11 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
+    white-space: nowrap;
+}
+
+.poetry .from br {
+    display: none;
 }
 
 .poetry .hitokoto {

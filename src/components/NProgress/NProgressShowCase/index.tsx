@@ -24,7 +24,7 @@ function NProgressShowCase(props: {
         <span className={styles["active"]}>{action}</span>
         <span className={styles["active"]}>{"(" + value + ")"}</span>
       </div>
-      <div>{desc}</div>
+      <div className={styles["desc"]}>{desc}</div>
     </div>
   );
 }
