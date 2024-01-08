@@ -6,8 +6,8 @@ interface Props {
 }
 
 /**
- * @param columns    必填项 title、dataIndex 选项 width、render
- * @param dataSource 必填项 key 必须是columns内的dataIndex
+ * @param props.columns    必填项 title、dataIndex 选项 width、render
+ * @param props.dataSource 必填项 key 必须是columns内的dataIndex
  */
 function DocTableList(props: Props) {
   const { columns, dataSource } = props;
