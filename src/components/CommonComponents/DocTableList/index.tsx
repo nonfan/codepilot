@@ -1,58 +1,17 @@
-interface Column {
-  title: string;
-  dataIndex: string;
-  width?: number;
-  render?: (data: any) => any;
-}
-
-interface DataSource {
-  [name: string]: any;
-}
-
-const columns: Column[] = [
-  {
-    title: "halo",
-    dataIndex: "name",
-    render: (data) => {
-      return <code>{data}</code>;
-    },
-  },
-  {
-    title: "halo",
-    dataIndex: "age",
-  },
-  {
-    title: "halo",
-    dataIndex: "address",
-  },
-];
-
-const dataSource: DataSource[] = [
-  {
-    key: "1",
-    name: "John Brown",
-    age: 32,
-    address: "New York No. 1 Lake Park",
-    tags: ["nice", "developer"],
-  },
-  {
-    key: "2",
-    name: "Jim Green",
-    age: 42,
-    address: "London No. 1 Lake Park",
-    tags: ["loser"],
-  },
-  {
-    key: "3",
-    name: "Joe Black",
-    age: 32,
-    address: "Sydney No. 1 Lake Park",
-    tags: ["cool", "teacher"],
-  },
-];
+import { Column, Columns, DataSource } from "@site/src";
 import "./index.scss";
-function DocTableList() {
-  const renderColumn = (column, rowData) => {
+interface Props {
+  columns: Columns;
+  dataSource: DataSource[];
+}
+
+/**
+ * @param columns    必填项 title、dataIndex 选项 width、render
+ * @param dataSource 必填项 key 必须是columns内的dataIndex
+ */
+function DocTableList(props: Props) {
+  const { columns, dataSource } = props;
+  const renderColumn = (column: Column, rowData: DataSource) => {
     if (column.render) {
       return column.render(rowData[column.dataIndex]);
     }
@@ -65,7 +24,14 @@ function DocTableList() {
         <thead>
           <tr>
             {columns.map((column) => {
-              return <th key={column.dataIndex}>{column.title}</th>;
+              return (
+                <th
+                  key={column.dataIndex}
+                  style={{ width: column.width + "px" }}
+                >
+                  {column.title}
+                </th>
+              );
             })}
           </tr>
         </thead>

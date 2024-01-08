@@ -25,3 +25,16 @@ export type NavigationItem = {
 };
 
 export type Navigations = NavigationItem[];
+
+export interface Column {
+  title: string;
+  dataIndex: string;
+  width?: number;
+  render?: (data: any) => any;
+}
+
+export type Columns = Column[];
+
+export type DataSource = {
+  [name: string]: any;
+};

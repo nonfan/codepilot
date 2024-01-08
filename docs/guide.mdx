@@ -1,9 +1,30 @@
 ---
 id: guide
 ---
-
 # 指南
 import DocTableList from "../src/components/CommonComponents/DocTableList";
 
-<DocTableList/>
+<DocTableList columns={[
+  {
+    title: "标签",
+    dataIndex: "name",
+    width: 150,
+    render: (data) => {
+      return <code>{data}</code>
+    }
+  },
+  {
+    title: "属性",
+    dataIndex: "desc"
+  }
+]} dataSource={[
+  {
+    name: "p",
+    desc: "段落标签"
+  },
+  {
+    name: "link",
+    desc: "链接标签"
+  }
+]}/>
 
