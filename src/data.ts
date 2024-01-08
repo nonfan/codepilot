@@ -88,6 +88,9 @@ import javaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
 import ScrapySvg from "@site/src/assets/icons/ScrapySvg";
 import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
 import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
+import MobxSvg from "@site/src/assets/icons/MobxSvg";
+import StorybookSvg from "@site/src/assets/icons/StorybookSvg";
+import RustSvg from "@site/src/assets/icons/RustSvg";
 
 /**
  * 前端三剑客
@@ -189,6 +192,13 @@ const JavaScriptFrame: Navigations = [
       "Remix 是一个面向 React 开发的现代 web 开发框架，它旨在提供更好的开发体验、更灵活的路由管理和更高性能的应用程序。Remix 提供了一种新的前端开发方式，支持数据驱动和增量式静态生成等特性，以提升 web 应用的性能和用户体验。",
     url: "https://agoodbook.github.io/remix/",
     icon: RemixSvg,
+  },
+  {
+    title: "Mobx",
+    smallTitle:
+      "MobX（也称为mobx-state-tree）是一个用于状态管理的 JavaScript 库，主要用于构建 React 应用程序。它提供了一种简单而强大的方式来管理应用程序中的状态，并自动更新相关的 UI 组件。",
+    url: "https://agoodbook.github.io/mobx/",
+    icon: MobxSvg,
   },
 ];
 
@@ -755,6 +765,13 @@ export const GoldenHouse: Navigations = [
     url: "https://agoodbook.github.io/data-structurer/",
     icon: DataStructureSvg,
   },
+  {
+    title: "JavaScript设计模式",
+    smallTitle:
+      "JavaScript 设计模式是一些可复用、通用的解决方案，用于解决在软件设计中经常遇到的问题。设计模式提供了一种在特定上下文中解决问题的方法，并有助于促进代码的可维护性、可读性和可扩展性。",
+    url: "https://agoodbook.github.io/javascript-design-patterns/",
+    icon: JavaScriptSvg,
+  },
 ];
 
 /**
@@ -866,6 +883,19 @@ export const ServerSideTechnology: Navigations = [
 ];
 
 /**
+ * 编程语言
+ */
+export const ProgramLanguage: Navigations = [
+  {
+    title: "Rust",
+    smallTitle:
+      "Rust 是一种系统级编程语言，注重安全性、并发性和性能。由 Mozilla 公司开发，于 2010 年首次公开发布。Rust 的设计目标之一是提供一种能够防止空指针引用、数据竞争等一系列内存安全问题的编程语言，同时仍然保持高性能。",
+    url: "https://agoodbook.github.io/rust/",
+    icon: RustSvg,
+  },
+];
+
+/**
  * 静态站点生成器
  */
 export const StaticSiteGenerator: Navigations = [
@@ -875,6 +905,19 @@ export const StaticSiteGenerator: Navigations = [
       "Nextra 是一个基于 Next.js 的静态站点生成器，专注于构建文档站点。Nextra 的目标是提供简单、易用且灵活的文档生成解决方案。",
     url: "https://agoodbook.github.io/nextra-docs/",
     icon: NextraSvg,
+  },
+];
+
+/**
+ * 前端工具
+ */
+export const FrontendTools: Navigations = [
+  {
+    title: "Storybook",
+    smallTitle:
+      "Storybook 是一个用于开发和测试 React、Vue、Angular 等前端组件的开源工具。它提供了一个独立的开发环境，让开发者能够以组件为单位进行开发、测试和文档编写，同时保持组件与整个应用的解耦。",
+    url: "https://agoodbook.github.io/storybook/",
+    icon: StorybookSvg,
   },
 ];
 
