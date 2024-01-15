@@ -9,7 +9,7 @@ interface Props {
  * @param props.columns    必填项 title、dataIndex 选项 width、render
  * @param props.dataSource 必填项 key 必须是columns内的dataIndex
  */
-function DocTableList(props: Props) {
+function DocTable(props: Props) {
   const { columns, dataSource } = props;
   const renderColumn = (column: Column, rowData: DataSource) => {
     if (column.render) {
@@ -53,4 +53,4 @@ function DocTableList(props: Props) {
   );
 }
 
-export default DocTableList;
+export default DocTable;
