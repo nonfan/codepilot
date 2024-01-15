@@ -12,6 +12,7 @@ config = {
   title: "AGoodBook", // 站点名称
   tagline: "书山有路勤为径，学海无涯苦作舟", // slogan，标语
   favicon: "img/favicon.ico",
+  trailingSlash: true,
 
   // 配置网站站点url
   url: `https://agoodbook.github.io/`,
