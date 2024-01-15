@@ -1,12 +1,14 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import Feedback from "@site/src/components/Feedback";
-import React from "react";
 
+function Test(e) {
+  console.log(e);
+}
 const username: string = "agoodbook";
 const repo: string = "agoodbook.github.io";
-const config: Config = {
+let config: Config;
+config = {
   title: "AGoodBook", // 站点名称
   tagline: "书山有路勤为径，学海无涯苦作舟", // slogan，标语
   favicon: "img/favicon.ico",
@@ -125,13 +127,6 @@ const config: Config = {
           position: "left",
           className: "custom-search",
         },
-        // {
-        //   type: "html",
-        //   position: "right",
-        //   value: `<div>
-        //       ${React.renderToString(<Feedback />)}
-        //     </div>`,
-        // },
         {
           type: "docsVersionDropdown",
           position: "right",

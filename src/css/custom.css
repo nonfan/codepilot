@@ -25,6 +25,9 @@
   --nprogress-bg: var(--ifm-color-primary);
   --code-block-bg: #f6f8fa;
   --border: #d9d9d9;
+  --feedback-btn-bg: #fff;
+  --feedback-btn-color: #2a2929;
+  --feedback-btn-border: #ebebeb;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -43,6 +46,9 @@
   --nprogress-bg: var(--ifm-color-primary);
   --code-block-bg: #282a36;
   --border: #686868;
+  --feedback-btn-bg: #090a11;
+  --feedback-btn-color: #f5f6f7;
+  --feedback-btn-border: #242424;
 }
 
 /* Antd组件变量 */
