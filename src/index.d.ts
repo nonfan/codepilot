@@ -21,6 +21,7 @@ export type NavigationItem = {
   url: string;
   icon: React.FC | string;
   children?: Children[];
+  officialWebsiteUrl?: string;
   contextMenu?: ContextMenu[];
 };
 
@@ -36,5 +37,5 @@ export interface Column {
 export type Columns = Column[];
 
 export type DataSource = {
-  [name: string]: any;
+  [key: string]: unknown;
 };

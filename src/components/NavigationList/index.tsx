@@ -7,6 +7,7 @@ import { Tooltip } from "antd";
 import { StyleProvider } from "@ant-design/cssinjs";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import "./index.scss";
+import WebSvg from "@site/src/assets/icons/WebSvg";
 
 interface Props {
   dataSource: Navigations;
@@ -40,11 +41,12 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     icon,
     url,
     contextMenu = [],
+    officialWebsiteUrl,
   } = props.navigationItem;
 
   const [isShowDesc, setIsShowDesc] = useState(false);
 
-  const commonMenu: ContextMenu[] = [
+  const [commonMenu, setCommonMenu] = useState<ContextMenu[]>([
     {
       title: "简介",
       icon: "Ctrl+E",
@@ -58,7 +60,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
       icon: SettingSvg,
       action: "open-setting",
     },
-  ];
+  ]);
 
   const { show } = useContextMenu({
     id: url,
@@ -115,8 +117,19 @@ function NavBar(props: { navigationItem: NavigationItem }) {
   }
 
   useEffect(() => {
-    window.addEventListener("click", () => setIsShowDesc(false));
+    if (officialWebsiteUrl) {
+      setCommonMenu([
+        {
+          title: "官方文档",
+          url: officialWebsiteUrl,
+          action: "see-to-website",
+          icon: WebSvg,
+        },
+        ...commonMenu,
+      ]);
+    }
 
+    window.addEventListener("click", () => setIsShowDesc(false));
     return () => {
       window.removeEventListener("click", () => setIsShowDesc(false));
     };

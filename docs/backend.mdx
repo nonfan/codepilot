@@ -8,16 +8,13 @@ hide_last_update: true
 
 import NavigationList from "../src/components/NavigationList";
 import {
-  CommonNodeJsLibraries,
-  DataBaseORMRFrame,
-  JavaScriptRuntimeEnvironment,
-  NodeJSBackendFrame,
+  backendData as Data
 } from "../src/data";
 
-<NavigationList title="JavaScript运行环境" dataSource={JavaScriptRuntimeEnvironment}/>
+<NavigationList title="JavaScript运行环境" dataSource={Data.JavaScriptRuntimeEnvironment}/>
 
-<NavigationList title="Node.js后端框架" dataSource={NodeJSBackendFrame}/>
+<NavigationList title="Node.js后端框架" dataSource={Data.NodeJSBackendFrame}/>
 
-<NavigationList title="数据库框架" dataSource={DataBaseORMRFrame}/>
+<NavigationList title="数据库框架" dataSource={Data.DataBaseORMRFrame}/>
 
-<NavigationList title="常用的Node.js库" dataSource={CommonNodeJsLibraries}/>
+<NavigationList title="常用的Node.js库" dataSource={Data.CommonNodeJsLibraries}/>

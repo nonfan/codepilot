@@ -141,3 +141,7 @@
   justify-content: center;
   align-items: center;
 }
+
+code {
+  padding: 0 5px;
+}

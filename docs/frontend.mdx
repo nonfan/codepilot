@@ -7,39 +7,32 @@ hide_table_of_contents: true
 # 前端技术
 
 import NavigationList from "../src/components/NavigationList";
-import {
-  ChartTools,
-  CSSFrame, ExploreFrontendTechnologies, FrontendDevelopmentBuildTools,
-  HttpRequest,
-  JavaScriptFrame, JavaScriptFunctionLibrary,
-  JavaScriptTestFrame, MobileEndFrame, PackageManager, RealTimeCommunicationFrame,
-  ThreeMusketeers, UIComponentsLibrary, WebGLJavaScriptLibrary,
-} from "../src/data";
+import {frontendData as Data} from "../src/data";
 
-<NavigationList title="前端三剑客" dataSource={ThreeMusketeers}/>
+<NavigationList title="前端三剑客" dataSource={Data.ThreeMusketeers}/>
 
-<NavigationList title="CSS 框架及相关 JavaScript库" dataSource={CSSFrame}/>
+<NavigationList title="CSS 框架及相关 JavaScript库" dataSource={Data.CSSFrame}/>
 
-<NavigationList title="JavaScript框架" dataSource={JavaScriptFrame}/>
+<NavigationList title="JavaScript框架" dataSource={Data.JavaScriptFrame}/>
 
-<NavigationList title="JavaScript函数库" dataSource={JavaScriptFunctionLibrary}/>
+<NavigationList title="JavaScript函数库" dataSource={Data.JavaScriptFunctionLibrary}/>
 
-<NavigationList title="网络请求技术" dataSource={HttpRequest}/>
+<NavigationList title="网络请求技术" dataSource={Data.HttpRequest}/>
 
-<NavigationList title="JavaScript测试框架" dataSource={JavaScriptTestFrame}/>
+<NavigationList title="JavaScript测试框架" dataSource={Data.JavaScriptTestFrame}/>
 
-<NavigationList title="WebSocket实时通讯框架" dataSource={RealTimeCommunicationFrame}/>
+<NavigationList title="WebSocket实时通讯框架" dataSource={Data.RealTimeCommunicationFrame}/>
 
-<NavigationList title="UI组件库" dataSource={UIComponentsLibrary}/>
+<NavigationList title="UI组件库" dataSource={Data.UIComponentsLibrary}/>
 
-<NavigationList title="前端开发构建工具" dataSource={FrontendDevelopmentBuildTools}/>
+<NavigationList title="前端开发构建工具" dataSource={Data.FrontendDevelopmentBuildTools}/>
 
-<NavigationList title="移动端框架" dataSource={MobileEndFrame}/>
+<NavigationList title="移动端框架" dataSource={Data.MobileEndFrame}/>
 
-<NavigationList title="可视化图标工具" dataSource={ChartTools}/>
+<NavigationList title="可视化图标工具" dataSource={Data.ChartTools}/>
 
-<NavigationList title="渲染 3D 图形的技术" dataSource={WebGLJavaScriptLibrary}/>
+<NavigationList title="渲染 3D 图形的技术" dataSource={Data.WebGLJavaScriptLibrary}/>
 
-<NavigationList title="探索前端技术" dataSource={ExploreFrontendTechnologies}/>
+<NavigationList title="探索前端技术" dataSource={Data.ExploreFrontendTechnologies}/>
 
-<NavigationList title="包管理器" dataSource={PackageManager}/>
+<NavigationList title="包管理器" dataSource={Data.PackageManager}/>

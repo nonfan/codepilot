@@ -1,114 +1,69 @@
+import { Navigations } from "@site/src";
 import HtmlSvg from "@site/src/assets/icons/HtmlSvg";
 import CssSvg from "@site/src/assets/icons/CssSvg";
 import JavaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
-import PythonSvg from "@site/src/assets/icons/PythonSvg";
+import TypeScriptSvg from "@site/src/assets/icons/TypeScriptSvg";
 import VueSvg from "@site/src/assets/icons/VueSvg";
 import ReactSvg from "@site/src/assets/icons/ReactSvg";
-import ExpressSvg from "@site/src/assets/icons/ExpressSvg";
-import NestSvg from "@site/src/assets/icons/NestSvg";
 import AngularSvg from "@site/src/assets/icons/AngularSvg";
-import FastifySvg from "@site/src/assets/icons/FastifySvg";
-import MeteorSvg from "@site/src/assets/icons/MeteorSvg";
 import NuxtSvg from "@site/src/assets/icons/NuxtSvg";
 import NextSvg from "@site/src/assets/icons/NextSvg";
-import TypeScriptSvg from "@site/src/assets/icons/TypeScriptSvg";
-import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
-import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
-import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
+import SvelteSvg from "@site/src/assets/icons/SvelteSvg";
+import UmiJSSvg from "@site/src/assets/icons/UmiJSSvg";
+import RemixSvg from "@site/src/assets/icons/RemixSvg";
+import MobxSvg from "@site/src/assets/icons/MobxSvg";
+import LodashSvg from "@site/src/assets/icons/LodashSvg";
+import ImmutableSvg from "@site/src/assets/icons/ImmutableSvg";
+import RxSvg from "@site/src/assets/icons/RxSvg";
+import MomentSvg from "@site/src/assets/icons/MomentSvg";
+import DaySvg from "@site/src/assets/icons/DaySvg";
+import GSAPSvg from "@site/src/assets/icons/GSAPSvg";
 import HttpSvg from "@site/src/assets/icons/HttpSvg";
-import JestSvg from "@site/src/assets/icons/JestSvg";
-import PrismaSvg from "@site/src/assets/icons/PrismaSvg";
-import TypeORMSvg from "@site/src/assets/icons/TypeORMSvg";
-import SequelizeSvg from "@site/src/assets/icons/SequelizeSvg";
+import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
+import FetchSvg from "@site/src/assets/icons/FetchSvg";
+import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
 import SWRSvg from "@site/src/assets/icons/SWRSvg";
+import JestSvg from "@site/src/assets/icons/JestSvg";
+import CypressSvg from "@site/src/assets/icons/CypressSvg";
+import PlaywrightSvg from "@site/src/assets/icons/PlaywrightSvg";
+import MochaSvg from "@site/src/assets/icons/MochaSvg";
+import ChaiSvg from "@site/src/assets/icons/ChaiSvg";
 import SassSvg from "@site/src/assets/icons/SassSvg";
-import TailwindCssSvg from "@site/src/assets/icons/TailwindCssSvg";
 import LessSvg from "@site/src/assets/icons/LessSvg";
-import NodeJsSvg from "@site/src/assets/icons/NodeJsSvg";
+import TailwindCssSvg from "@site/src/assets/icons/TailwindCssSvg";
 import PurgeCssSvg from "@site/src/assets/icons/PurgeCssSvg";
 import ViteSvg from "@site/src/assets/icons/ViteSvg";
 import WebpackSvg from "@site/src/assets/icons/WebpackSvg";
 import BabelSvg from "@site/src/assets/icons/BabelSvg";
-import CypressSvg from "@site/src/assets/icons/CypressSvg";
-import SvelteSvg from "@site/src/assets/icons/SvelteSvg";
 import GulpSvg from "@site/src/assets/icons/GulpSvg";
+import RollupSvg from "@site/src/assets/icons/RollupSvg";
 import ChartSvg from "@site/src/assets/icons/ChartSvg";
 import D3Svg from "@site/src/assets/icons/D3Svg";
-import AntVSvg from "@site/src/assets/icons/AntVSvg";
 import EChartsSvg from "@site/src/assets/icons/EChartsSvg";
+import AntVSvg from "@site/src/assets/icons/AntVSvg";
 import ThreeSvg from "@site/src/assets/icons/ThreeSvg";
-import DenoSvg from "@site/src/assets/icons/DenoSvg";
-import PlaywrightSvg from "@site/src/assets/icons/PlaywrightSvg";
 import ReactNativeSvg from "@site/src/assets/icons/ReactNativeSvg";
 import FlutterSvg from "@site/src/assets/icons/FlutterSvg";
 import UniAppSvg from "@site/src/assets/icons/UniAppSvg";
 import WechatMiniSvg from "@site/src/assets/icons/WechatMiniSvg";
 import AntDesignSvg from "@site/src/assets/icons/AntDesignSvg";
 import ElementUiSvg from "@site/src/assets/icons/ElementUiSvg";
-import { Navigations } from "@site/src/index";
-import ElectronSvg from "@site/src/assets/icons/ElectronSvg";
-import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
-import RollupSvg from "@site/src/assets/icons/RollupSvg";
-import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
-import EggSvg from "@site/src/assets/icons/EggSvg";
-import UmiJSSvg from "@site/src/assets/icons/UmiJSSvg";
-import RemixSvg from "@site/src/assets/icons/RemixSvg";
-import LodashSvg from "@site/src/assets/icons/LodashSvg";
-import ImmutableSvg from "@site/src/assets/icons/ImmutableSvg";
-import RxSvg from "@site/src/assets/icons/RxSvg";
-import MomentSvg from "@site/src/assets/icons/MomentSvg";
-import DaySvg from "@site/src/assets/icons/DaySvg";
-import MochaSvg from "@site/src/assets/icons/MochaSvg";
-import GSAPSvg from "@site/src/assets/icons/GSAPSvg";
-import ChaiSvg from "@site/src/assets/icons/ChaiSvg";
-import FetchSvg from "@site/src/assets/icons/FetchSvg";
-import WebSocketSvg from "@site/src/assets/icons/WebSocketSvg";
-import WebAssemblySvg from "@site/src/assets/icons/WebAssemblySvg";
 import NpmSvg from "@site/src/assets/icons/NpmSvg";
 import YarnSvg from "@site/src/assets/icons/YarnSvg";
-import SailsSvg from "@site/src/assets/icons/SailsSvg";
-import MongoDBSvg from "@site/src/assets/icons/MongoDBSvg";
-import MySQLSvg from "@site/src/assets/icons/MySQLSvg";
-import PostgreSQL from "@site/src/assets/icons/PostgreSQL";
-import Redis from "@site/src/assets/icons/Redis";
-import SQLiteSvg from "@site/src/assets/icons/SQLiteSvg";
-import AdonisSvg from "@site/src/assets/icons/AdonisSvg";
-import MongooseSvg from "@site/src/assets/icons/MongooseSvg";
-import NodemailerSvg from "@site/src/assets/icons/NodemailerSvg";
-import NodeFetchSvg from "@site/src/assets/icons/NodeFetchSvg";
-import PassportSvg from "@site/src/assets/icons/PassportSvg";
-import JsonWebTokenSvg from "@site/src/assets/icons/JsonWebTokenSvg";
-import MulterSvg from "@site/src/assets/icons/MulterSvg";
-import SharpSvg from "@site/src/assets/icons/SharpSvg";
-import DockerSvg from "@site/src/assets/icons/DockerSvg";
-import NginxSvg from "@site/src/assets/icons/NginxSvg";
-import LinuxSvg from "@site/src/assets/icons/LinuxSvg";
-import NextraSvg from "@site/src/assets/icons/NextraSvg";
-import javaScriptSvg from "@site/src/assets/icons/JavaScriptSvg";
-import ScrapySvg from "@site/src/assets/icons/ScrapySvg";
-import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
-import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
-import MobxSvg from "@site/src/assets/icons/MobxSvg";
-import StorybookSvg from "@site/src/assets/icons/StorybookSvg";
-import RustSvg from "@site/src/assets/icons/RustSvg";
+import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
+import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
+import WebAssemblySvg from "@site/src/assets/icons/WebAssemblySvg";
+import WebSocketSvg from "@site/src/assets/icons/WebSocketSvg";
+import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
 
-/**
- * 前端三剑客
- */
-const ThreeMusketeers: Navigations = [
+export const ThreeMusketeers: Navigations = [
   {
     title: "HTML",
     smallTitle:
       "HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。",
     url: "https://agoodbook.github.io/html/",
     icon: HtmlSvg,
-    contextMenu: [
-      {
-        title: "官方文档",
-        url: "https://www.baidu.com",
-        action: "see-to-website",
-      },
-    ],
+    officialWebsiteUrl: "https://developer.mozilla.org/zh-CN/docs/Web/HTML",
   },
   {
     title: "CSS",
@@ -116,6 +71,7 @@ const ThreeMusketeers: Navigations = [
       "CSS，即层叠样式表（Cascading NProgressStyle Sheets），是一种用于描述HTML或XML（包括SVG或XHTML等XML方言）文档展示样式的语言。",
     url: "https://agoodbook.github.io/css/",
     icon: CssSvg,
+    officialWebsiteUrl: "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
   },
   {
     title: "JavaScript",
@@ -136,7 +92,7 @@ const ThreeMusketeers: Navigations = [
 /**
  * javascript框架
  */
-const JavaScriptFrame: Navigations = [
+export const JavaScriptFrame: Navigations = [
   {
     title: "Vue.js",
     smallTitle:
@@ -205,7 +161,7 @@ const JavaScriptFrame: Navigations = [
 /**
  * javascript 函数库
  */
-const JavaScriptFunctionLibrary: Navigations = [
+export const JavaScriptFunctionLibrary: Navigations = [
   {
     title: "Lodash.js",
     smallTitle: "Lodash 是一个一致性、模块化、高性能的 JavaScript 实用工具库。",
@@ -252,7 +208,7 @@ const JavaScriptFunctionLibrary: Navigations = [
 /**
  * 网络请求技术
  */
-const HttpRequest: Navigations = [
+export const HttpRequest: Navigations = [
   {
     title: "HTTP",
     smallTitle:
@@ -293,7 +249,7 @@ const HttpRequest: Navigations = [
 /**
  * JavaScript测试框架
  */
-const JavaScriptTestFrame: Navigations = [
+export const JavaScriptTestFrame: Navigations = [
   {
     title: "Jest",
     smallTitle: "Jest 是一个令人愉快的 JavaScript 测试框架，专注于 简洁明快",
@@ -333,7 +289,7 @@ const JavaScriptTestFrame: Navigations = [
 /**
  *  CSS 框架
  */
-const CSSFrame: Navigations = [
+export const CSSFrame: Navigations = [
   {
     title: "Sass",
     smallTitle: "Sass 是世界上最成熟、最稳定、最强大的专业级CSS扩展语言 。",
@@ -373,7 +329,7 @@ const CSSFrame: Navigations = [
 /**
  * 前端开发构建工具
  */
-const FrontendDevelopmentBuildTools: Navigations = [
+export const FrontendDevelopmentBuildTools: Navigations = [
   {
     title: "Vite",
     smallTitle:
@@ -414,7 +370,7 @@ const FrontendDevelopmentBuildTools: Navigations = [
 /**
  * 前端图表工具和库
  */
-const ChartTools: Navigations = [
+export const ChartTools: Navigations = [
   {
     title: "Chart.js",
     smallTitle:
@@ -448,7 +404,7 @@ const ChartTools: Navigations = [
 /**
  * WebGL JavaScript库
  */
-const WebGLJavaScriptLibrary: Navigations = [
+export const WebGLJavaScriptLibrary: Navigations = [
   {
     title: "Three.js",
     smallTitle:
@@ -461,7 +417,7 @@ const WebGLJavaScriptLibrary: Navigations = [
 /**
  * 移动端框架
  */
-const MobileEndFrame: Navigations = [
+export const MobileEndFrame: Navigations = [
   {
     title: "React Native",
     smallTitle:
@@ -495,7 +451,7 @@ const MobileEndFrame: Navigations = [
 /**
  * UI组件库
  */
-const UIComponentsLibrary: Navigations = [
+export const UIComponentsLibrary: Navigations = [
   {
     title: "Ant Design",
     smallTitle:
@@ -515,7 +471,7 @@ const UIComponentsLibrary: Navigations = [
 /**
  * 包管理器
  */
-const PackageManager: Navigations = [
+export const PackageManager: Navigations = [
   {
     title: "NPM",
     smallTitle:
@@ -535,7 +491,7 @@ const PackageManager: Navigations = [
 /**
  * 探索前端技术
  */
-const ExploreFrontendTechnologies: Navigations = [
+export const ExploreFrontendTechnologies: Navigations = [
   {
     title: "WebRTC",
     smallTitle:
@@ -562,7 +518,7 @@ const ExploreFrontendTechnologies: Navigations = [
 /**
  * WebSocket实时通讯框架
  */
-const RealTimeCommunicationFrame: Navigations = [
+export const RealTimeCommunicationFrame: Navigations = [
   {
     title: "WebSockets",
     smallTitle:
@@ -578,369 +534,3 @@ const RealTimeCommunicationFrame: Navigations = [
     icon: SocketIoSvg,
   },
 ];
-
-/*************************************************前端与后端数据源分界线**************************************************/
-
-/**
- * Javascript 运行环境
- */
-const JavaScriptRuntimeEnvironment: Navigations = [
-  {
-    title: "Node.js",
-    smallTitle:
-      "Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时环境，用于构建快速、可扩展的网络应用程序。",
-    url: "https://agoodbook.github.io/node.js/",
-    icon: NodeJsSvg,
-  },
-  {
-    title: "Deno.js",
-    smallTitle:
-      "Deno 是一个简单、先进且安全的 JavaScript 和 TypeScript 运行时环境，其基于 V8 引擎并采用 Rust 编程语言构建。",
-    url: "https://agoodbook.github.io/deno.js/",
-    icon: DenoSvg,
-  },
-];
-
-/**
- * NodeJS后端框架
- */
-const NodeJSBackendFrame: Navigations = [
-  {
-    title: "Express.js",
-    smallTitle:
-      "Express 是一个保持最小规模的灵活的 Node.js Web 应用程序开发框架，为 Web 和移动应用程序提供一组强大的功能。",
-    url: "https://agoodbook.github.io/express.js/",
-    icon: ExpressSvg,
-  },
-  {
-    title: "Koa.js",
-    smallTitle:
-      "koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。",
-    url: "https://agoodbook.github.io/koa.js/",
-    icon: "Ko",
-  },
-  {
-    title: "Egg.js",
-    smallTitle:
-      "Egg.js 是一个基于 Node.js 和 Koa 的企业级应用开发框架，旨在提供一套约定和最佳实践，以帮助开发者更快速、更高效地构建可维护和可扩展的应用。Egg.js 继承了 Koa 的中间件机制，同时引入了更多的特性和约定，使得开发者在处理复杂业务逻辑时更加得心应手。",
-    url: "https://agoodbook.github.io/egg.js/",
-    icon: EggSvg,
-  },
-  {
-    title: "Nest.js",
-    smallTitle:
-      "Nest (NestJS) 是一个用于构建高效、可扩展的 Node.js 服务器端应用程序的开发框架。它利用 JavaScript 的渐进增强的能力，使用并完全支持 TypeScript （仍然允许开发者使用纯 JavaScript 进行开发），并结合了 OOP （面向对象编程）、FP （函数式编程）和 FRP （函数响应式编程）。",
-    url: "https://agoodbook.github.io/nest.js/",
-    icon: NestSvg,
-  },
-  {
-    title: "Meteor",
-    smallTitle:
-      "Meteor.js（通常被称为Meteor）是一个全栈JavaScript框架，用于构建现代Web应用程序。它旨在简化Web应用程序的开发流程，提供了一整套工具和库，涵盖了前端和后端开发，以及实时数据传输。",
-    url: "https://agoodbook.github.io/meteor/",
-    icon: MeteorSvg,
-  },
-  {
-    title: "Fastify",
-    smallTitle:
-      "Fastify 是一个轻量、高效的 Node.js Web 框架，专注于提供快速且低开销的服务",
-    url: "https://agoodbook.github.io/fastify/",
-    icon: FastifySvg,
-  },
-  {
-    title: "Sails.js",
-    smallTitle:
-      "Sails.js 是一个基于 Node.js 的 MVC（Model-View-Controller）框架，专注于简化构建实时Web应用程序的过程。Sails.js 提供了对实时功能的内置支持，包括WebSocket的自动集成，使得构建实时Web应用变得更加容易。",
-    url: "https://agoodbook.github.io/sails.js/",
-    icon: SailsSvg,
-  },
-  {
-    title: "Adonis.js",
-    smallTitle:
-      "Adonis.js是一个全栈MVC框架，提供强大的命令行工具、ORM、自动化测试和安全性功能，鼓励异步编程，支持插件系统和GraphQL，使得构建现代化、可扩展的Web应用变得简单而高效。",
-    url: "https://agoodbook.github.io/adonis.js/",
-    icon: AdonisSvg,
-  },
-];
-
-/**
- * 数据库ORM框架
- */
-const DataBaseORMRFrame: Navigations = [
-  {
-    title: "Prisma",
-    smallTitle:
-      "Prisma 是一款现代的、类型安全的数据库访问工具和ORM（对象关系映射）框架，专注于为Node.js和TypeScript应用程序提供数据库访问的便捷和强大的解决方案。",
-    url: "https://agoodbook.github.io/prisma/",
-    icon: PrismaSvg,
-  },
-  {
-    title: "TypeORM",
-    smallTitle:
-      "TypeORM 是一款开源的、基于 TypeScript 的对象关系映射（ORM）框架，用于在 Node.js 环境中与关系型数据库进行交互。",
-    url: "https://agoodbook.github.io/typeorm/",
-    icon: TypeORMSvg,
-  },
-  {
-    title: "Sequelize",
-    smallTitle:
-      "Sequelize 是一款基于 JavaScript/Node.js 的ORM（对象关系映射）库，用于简化与关系型数据库的交互。",
-    url: "https://agoodbook.github.io/sequelize/",
-    icon: SequelizeSvg,
-  },
-  {
-    title: "Mongoose",
-    smallTitle:
-      "Mongoose 是一个在 Node.js 环境中操作 MongoDB 数据库的官方 ODM（Object Data Modeling）库，它简化了 MongoDB 数据库的交互和管理，提供了强大的模型定义、查询构建和中间件支持，使开发者能够更轻松地使用 MongoDB 存储和操作数据。",
-    url: "https://agoodbook.github.io/mongoose/",
-    icon: MongooseSvg,
-  },
-];
-
-/**
- * 常用的Node.js库
- */
-const CommonNodeJsLibraries: Navigations = [
-  {
-    title: "Nodemailer",
-    smallTitle:
-      "Nodemailer 是一个强大的 Node.js 库，专门用于发送电子邮件。它提供了灵活的 API，支持附件、HTML 内容、多种传输方式，以及各种邮件服务商的集成。无论是构建简单的文本邮件还是复杂的HTML邮件，Nodemailer都是一个可靠且广泛使用的工具，使得在 Node.js 环境中轻松实现邮件发送功能成为可能。",
-    url: "https://agoodbook.github.io/nodemailer/",
-    icon: NodemailerSvg,
-  },
-  {
-    title: "Node-Fetch",
-    smallTitle:
-      "node-fetch 是一个用于发起 HTTP 请求的 Node.js 模块，它与浏览器中的 fetch API 类似。它简化了在 Node.js 环境中进行网络请求的过程，支持 Promise，提供了简洁而现代的 API，适用于获取和处理 HTTP 响应。通过使用 node-fetch，您可以轻松地执行 GET、POST 等各种 HTTP 请求，并处理返回的数据。",
-    url: "https://agoodbook.github.io/node-fetch/",
-    icon: NodeFetchSvg,
-  },
-  {
-    title: "Passport",
-    smallTitle:
-      "Passport 是一个用于 Node.js 的身份验证中间件，它设计简洁、灵活，用于处理用户身份验证和授权的流程。Passport 提供了一个插件式的体系结构，允许开发者选择并配置适合其应用程序需求的身份验证策略，如本地用户名密码、OAuth、OpenID 等。通过使用 Passport，开发者可以轻松地集成和管理用户身份验证，使其应用程序更安全且易于扩展。",
-    url: "https://agoodbook.github.io/passport/",
-    icon: PassportSvg,
-  },
-  {
-    title: "JsonWebToken",
-    smallTitle:
-      "JSON Web Token（JWT）是一种开放标准（RFC 7519），用于在各方之间安全地传输信息。它是一种紧凑的、自包含的方式，可以在用户和服务之间传递声明。JWT通常用于身份验证和信息交换，被广泛应用于 Web 开发领域。一个JWT包含了经过签名的声明，可以被验证和解码，以确保信息的完整性和来源可信。JWT的结构由三个部分组成：Header、Payload 和 Signature。 Header 和 Payload 使用 Base64 进行编码，然后通过一个点号连接在一起，最后添加签名，形成 JWT。 JWT的签名可以使用密钥进行验证，确保 JWT 的内容没有被篡改。",
-    url: "https://agoodbook.github.io/json-web-token/",
-    icon: JsonWebTokenSvg,
-  },
-  {
-    title: "Sharp",
-    smallTitle:
-      "Sharp 是一个高性能的图像处理库，专为 Node.js 设计。它支持快速的图像调整大小、裁剪、旋转、滤镜应用等操作，并在处理大型图像时表现出色。Sharp 基于 libvips（一个用于图像处理的开源库），提供简单而强大的 API，使开发者能够轻松地集成图像处理功能到他们的应用程序中。",
-    url: "https://agoodbook.github.io/sharp/",
-    icon: SharpSvg,
-  },
-  {
-    title: "Multer",
-    smallTitle:
-      "Multer 是一个用于处理 Node.js 中文件上传的中间件。它能够解析并处理来自 HTML 表单的文件上传请求，支持单个文件或多个文件的同时上传。Multer 提供了易于使用的 API，允许您定义文件的存储位置、文件命名规则以及文件类型的限制。通过 Multer，您可以方便地将文件上传功能集成到 Express.js 应用程序中。",
-    url: "https://agoodbook.github.io/multer/",
-    icon: MulterSvg,
-  },
-];
-
-/*************************************************全栈技术**************************************************/
-
-/**
- * 书中自有黄金屋
- */
-export const GoldenHouse: Navigations = [
-  {
-    title: "JavaScript之重构",
-    smallTitle:
-      "重构（Refactoring）是指对现有代码进行调整和修改，以改善其结构、可读性、可维护性，而不改变其外部行为。在 JavaScript 中，重构是一个常见的实践，旨在提高代码质量和开发效率。",
-    url: "https://agoodbook.github.io/javascript-refactor/",
-    icon: javaScriptSvg,
-  },
-  {
-    title: "数据结构与算法",
-    smallTitle:
-      "数据结构（Data Structure）是计算机中存储、组织数据的方式。数据结构是一种具有一定逻辑关系，在计算机中应用某种存储结构，并且封装了相应操作的数据元素集合。它包含三方面的内容，逻辑关系、存储关系及操作。不同种类的数据结构适合于不同种类的应用，而部分甚至专门用于特定的作业任务。",
-    url: "https://agoodbook.github.io/data-structurer/",
-    icon: DataStructureSvg,
-  },
-  {
-    title: "JavaScript设计模式",
-    smallTitle:
-      "JavaScript 设计模式是一些可复用、通用的解决方案，用于解决在软件设计中经常遇到的问题。设计模式提供了一种在特定上下文中解决问题的方法，并有助于促进代码的可维护性、可读性和可扩展性。",
-    url: "https://agoodbook.github.io/javascript-design-patterns/",
-    icon: JavaScriptSvg,
-  },
-];
-
-/**
- * 爬虫技术
- */
-const ReptileTechnology: Navigations = [
-  {
-    title: "Python",
-    smallTitle:
-      "Python是一种通用、高级、解释型编程语言。它并不局限于特定的技术领域，而是被广泛应用于多个领域。",
-    url: "https://agoodbook.github.io/python/",
-    icon: PythonSvg,
-  },
-  {
-    title: "Scrapy",
-    smallTitle:
-      "Scrapy 是一个基于Python的开源爬虫框架，被广泛用于抓取和提取网站数据。它具有灵活的架构、中间件支持、规则系统等特点。",
-    url: "https://agoodbook.github.io/scrapy/",
-    icon: ScrapySvg,
-  },
-  {
-    title: "Puppeteer",
-    smallTitle:
-      "Puppeteer (Node.js)： Puppeteer 是一个由Google开发的Node.js库，用于控制Headless Chrome或Chromium浏览器。它适用于需要处理JavaScript渲染的爬虫任务。",
-    url: "https://agoodbook.github.io/puppeteer/",
-    icon: PuppeteerSvg,
-  },
-];
-
-/**
- * 桌面应用程序开发框架
- */
-const DesktopAppFramework: Navigations = [
-  {
-    title: "Electron",
-    smallTitle:
-      "Electron 是一个开源的跨平台桌面应用程序开发框架，它允许开发者使用常用的 Web 技术，如 HTML、CSS 和 JavaScript/TypeScript，构建桌面应用程序。",
-    url: "https://agoodbook.github.io/electron/",
-    icon: ElectronSvg,
-  },
-];
-
-/**
- * 数据库
- */
-const Databases: Navigations = [
-  {
-    title: "MongoDB",
-    smallTitle:
-      "MongoDB是一种NoSQL文档型数据库，以其灵活的数据模型和便于水平扩展而闻名。它适用于大量文档的存储和查询，特别在Web应用和大数据领域广泛使用。",
-    url: "https://agoodbook.github.io/mongodb/",
-    icon: MongoDBSvg,
-  },
-  {
-    title: "MySQL",
-    smallTitle:
-      "MySQL是一种开源的关系型数据库管理系统（RDBMS），在Web应用和企业应用中得到广泛应用。它支持SQL查询语言，具有稳定性和可靠性。",
-    url: "https://agoodbook.github.io/mysql/",
-    icon: MySQLSvg,
-  },
-  {
-    title: "PostgreSQL",
-    smallTitle:
-      "PostgreSQL是一种强大的开源关系型数据库系统，具有高度的可扩展性和支持复杂的数据类型。它在数据安全性和完整性方面有很强的特性，适用于各种应用场景。",
-    url: "https://agoodbook.github.io/postgresql/",
-    icon: PostgreSQL,
-  },
-  {
-    title: "Redis",
-    smallTitle:
-      "Redis是一种开源的键值对存储数据库，常用作缓存系统和消息队列。由于其高性能、低延迟和支持多种数据结构，Redis在大规模分布式系统中得到广泛使用。",
-    url: "https://agoodbook.github.io/redis/",
-    icon: Redis,
-  },
-  {
-    title: "SQLite",
-    smallTitle:
-      "QLite是一种嵌入式关系型数据库引擎，具有轻量级和零配置的特点。由于其小巧的体积和易于集成，SQLite在移动应用和嵌入式系统中得到广泛使用。",
-    url: "https://agoodbook.github.io/sqlite/",
-    icon: SQLiteSvg,
-  },
-];
-
-/**
- * 服务器端技术
- */
-export const ServerSideTechnology: Navigations = [
-  {
-    title: "Docker",
-    smallTitle:
-      "Docker是一种轻量级的容器化平台，允许开发者将应用程序和所有依赖项打包到一个独立的容器中。这个容器可以在任何支持Docker的环境中运行，提供了一致性、可移植性和高效性，简化了应用程序的开发、测试和部署过程。",
-    url: "https://agoodbook.github.io/docker/",
-    icon: DockerSvg,
-  },
-  {
-    title: "Nginx",
-    smallTitle:
-      "Nginx（发音为engine-x）是一个高性能的开源Web服务器和反向代理服务器。它设计简洁、轻量级，以高效地处理并发连接而闻名。Nginx不仅用于提供静态内容，还可作为反向代理，将客户端请求转发给后端的应用服务器。其灵活性、可扩展性和卓越的性能使其成为许多Web应用和服务的首选服务器。",
-    url: "https://agoodbook.github.io/nginx/",
-    icon: NginxSvg,
-  },
-  {
-    title: "Linux",
-    smallTitle:
-      "Linux是一种开源的、多用户、多任务、支持多种硬件架构的操作系统内核。它以稳定性、安全性和灵活性著称，广泛用于服务器、嵌入式系统和个人计算机。 Linux系统采用UNIX风格的设计，具有强大的命令行界面，同时支持图形用户界面，例如GNOME和KDE。 Linux操作系统的核心思想是开源合作，用户可以自由使用、修改和分发Linux。",
-    url: "https://agoodbook.github.io/linux/",
-    icon: LinuxSvg,
-  },
-];
-
-/**
- * 编程语言
- */
-export const ProgramLanguage: Navigations = [
-  {
-    title: "Rust",
-    smallTitle:
-      "Rust 是一种系统级编程语言，注重安全性、并发性和性能。由 Mozilla 公司开发，于 2010 年首次公开发布。Rust 的设计目标之一是提供一种能够防止空指针引用、数据竞争等一系列内存安全问题的编程语言，同时仍然保持高性能。",
-    url: "https://agoodbook.github.io/rust/",
-    icon: RustSvg,
-  },
-];
-
-/**
- * 静态站点生成器
- */
-export const StaticSiteGenerator: Navigations = [
-  {
-    title: "Nextra",
-    smallTitle:
-      "Nextra 是一个基于 Next.js 的静态站点生成器，专注于构建文档站点。Nextra 的目标是提供简单、易用且灵活的文档生成解决方案。",
-    url: "https://agoodbook.github.io/nextra-docs/",
-    icon: NextraSvg,
-  },
-];
-
-/**
- * 前端工具
- */
-export const FrontendTools: Navigations = [
-  {
-    title: "Storybook",
-    smallTitle:
-      "Storybook 是一个用于开发和测试 React、Vue、Angular 等前端组件的开源工具。它提供了一个独立的开发环境，让开发者能够以组件为单位进行开发、测试和文档编写，同时保持组件与整个应用的解耦。",
-    url: "https://agoodbook.github.io/storybook/",
-    icon: StorybookSvg,
-  },
-];
-
-export {
-  ThreeMusketeers,
-  ReptileTechnology,
-  JavaScriptFrame,
-  NodeJSBackendFrame,
-  RealTimeCommunicationFrame,
-  HttpRequest,
-  JavaScriptTestFrame,
-  DataBaseORMRFrame,
-  CSSFrame,
-  FrontendDevelopmentBuildTools,
-  ChartTools,
-  WebGLJavaScriptLibrary,
-  JavaScriptRuntimeEnvironment,
-  MobileEndFrame,
-  UIComponentsLibrary,
-  DesktopAppFramework,
-  ExploreFrontendTechnologies,
-  JavaScriptFunctionLibrary,
-  PackageManager,
-  Databases,
-  CommonNodeJsLibraries,
-};

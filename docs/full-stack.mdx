@@ -8,22 +8,17 @@ hide_last_update: true
 
 import NavigationList from "../src/components/NavigationList";
 import {
-  Databases,
-  DesktopAppFramework,
-  GoldenHouse,
-  ProgramLanguage,
-  ReptileTechnology,
-  ServerSideTechnology,
+  fullStackData as Data
 } from "../src/data";
 
-<NavigationList title="书中自有黄金屋" dataSource={GoldenHouse}/>
+<NavigationList title="书中自有黄金屋" dataSource={Data.GoldenHouse}/>
 
-<NavigationList title="爬虫技术" dataSource={ReptileTechnology}/>
+<NavigationList title="爬虫技术" dataSource={Data.ReptileTechnology}/>
 
-<NavigationList title="桌面应用程序开发框架" dataSource={DesktopAppFramework}/>
+<NavigationList title="桌面应用程序开发框架" dataSource={Data.DesktopAppFramework}/>
 
-<NavigationList title="数据库" dataSource={Databases}/>
+<NavigationList title="数据库" dataSource={Data.Databases}/>
 
-<NavigationList title="服务器端技术" dataSource={ServerSideTechnology}/>
+<NavigationList title="服务器端技术" dataSource={Data.ServerSideTechnology}/>
 
-<NavigationList title="编程语言" dataSource={ProgramLanguage}/>
+<NavigationList title="编程语言" dataSource={Data.ProgramLanguage}/>
