@@ -1,6 +1,6 @@
-import * as frontendData from "./frontend";
-import * as backendData from "./backend";
-import * as fullStackData from "./full-stack";
-import * as storeroomData from "./storeroom";
+import * as FrontendData from "./frontend";
+import * as BackendData from "./backend";
+import * as FullStackData from "./full-stack";
+import * as StoreroomData from "./storeroom";
 
-export { frontendData, backendData, fullStackData, storeroomData };
+export { FrontendData, BackendData, FullStackData, StoreroomData };

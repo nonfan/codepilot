@@ -67,13 +67,19 @@ export default function HomepageFeatures(): JSX.Element {
    * 存在问题：遍历需要时间，若每次刷新都需要经过这个时间，会影响体验
    */
   function setRandomListToFeatureList() {
-    let all = [];
-    Object.keys(AllNavigation).forEach((key) => {
-      all = all.concat(AllNavigation[key]);
-    });
+    function getInnermostList(
+      object: unknown,
+      all: NavigationItem[] = [],
+    ): NavigationItem[] {
+      return Object.values(object).flatMap((item) => {
+        if (item instanceof Array) {
+          return item;
+        }
+        return getInnermostList(item, all);
+      });
+    }
 
-    let randomList = getRandomElements(all, 6);
-
+    const randomList = getRandomElements(getInnermostList(AllNavigation), 6);
     setFeatureList(randomList);
   }
 
