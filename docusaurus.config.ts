@@ -2,9 +2,6 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-function Test(e) {
-  console.log(e);
-}
 const username: string = "agoodbook";
 const repo: string = "agoodbook.github.io";
 let config: Config;
