@@ -15,6 +15,7 @@ import ScrapySvg from "@site/src/assets/icons/ScrapySvg";
 import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
 import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
 import RustSvg from "@site/src/assets/icons/RustSvg";
+import GoSvg from "@site/src/assets/icons/GoSvg";
 
 /**
  * 书中自有黄金屋
@@ -161,5 +162,12 @@ export const ProgramLanguage: Navigations = [
       "Rust 是一种系统级编程语言，注重安全性、并发性和性能。由 Mozilla 公司开发，于 2010 年首次公开发布。Rust 的设计目标之一是提供一种能够防止空指针引用、数据竞争等一系列内存安全问题的编程语言，同时仍然保持高性能。",
     url: "https://agoodbook.github.io/rust/",
     icon: RustSvg,
+  },
+  {
+    title: "Go",
+    smallTitle:
+      "Go（又称Golang）是由Google开发的开源编程语言，以简洁、高效和并发支持为特点。它具有清晰的语法、内置并发机制和自动垃圾回收，适用于构建高性能、可维护的软件。Go的快速编译、跨平台支持和适用于分布式系统的特性使其在云计算和网络编程领域广受欢迎。",
+    url: "https://agoodbook.github.io/go/",
+    icon: GoSvg,
   },
 ];
