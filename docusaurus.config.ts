@@ -118,6 +118,7 @@ config = {
         { to: "docs/frontend", label: "前端", position: "left" },
         { to: "docs/backend", label: "后端", position: "left" },
         { to: "docs/full-stack", label: "全栈", position: "left" },
+        { to: "docs/up-projects", label: "创意工坊", position: "right" },
         { to: "docs/storeroom", label: "杂物库", position: "right" },
         //   right
         {
