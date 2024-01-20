@@ -35,7 +35,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.2.0
       with:
         branch: gh-pages  # 部署到 gh-pages 分支
-        folder: build  # 从 build 文件夹中获取要部署的文件
+        folder: ./build  # 从 build 文件夹中获取要部署的文件
 
     - name: Notify Deployment Status
       run: echo "Deployment successful!"
