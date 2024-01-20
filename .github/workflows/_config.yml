@@ -37,9 +37,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
-    - name: Debug
-      run: ls -R ./build
-
     - name: Notify Deployment Status
       run: echo "Deployment successful!"
 
