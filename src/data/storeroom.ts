@@ -2,6 +2,7 @@ import { Navigations } from "@site/src";
 import NextraSvg from "@site/src/assets/icons/NextraSvg";
 import StorybookSvg from "@site/src/assets/icons/StorybookSvg";
 import ReactSvg from "@site/src/assets/icons/ReactSvg";
+import VueSvg from "@site/src/assets/icons/VueSvg";
 
 /**
  * 静态站点生成器
@@ -40,5 +41,12 @@ export const Other: Navigations = [
       "ComponentLibrary 是自己搭建的一个React组件库，方便使用，并发布了相应的npm包(component-library)",
     url: "https://agoodbook.github.io/component-library/",
     icon: ReactSvg,
+  },
+  {
+    title: "VueComponentLibrary",
+    smallTitle:
+      "VueComponentLibrary 是自己搭建的一个Vue组件库，方便使用，并发布了相应的npm包(component-library)",
+    url: "https://agoodbook.github.io/vue-component-library/",
+    icon: VueSvg,
   },
 ];
