@@ -31,8 +31,15 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link {
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
 }
+
+[data-theme="dark"] .link {
+  background-color: #1b1b1d;
+  border-color: #1b1b1d;
+}
+
+
