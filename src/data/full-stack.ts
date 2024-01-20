@@ -16,6 +16,7 @@ import PuppeteerSvg from "@site/src/assets/icons/PuppeteerSvg";
 import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
 import RustSvg from "@site/src/assets/icons/RustSvg";
 import GoSvg from "@site/src/assets/icons/GoSvg";
+import CISvg from "@site/src/assets/icons/CISvg";
 
 /**
  * 书中自有黄金屋
@@ -41,6 +42,13 @@ export const GoldenHouse: Navigations = [
       "数据结构（Data Structure）是计算机中存储、组织数据的方式。数据结构是一种具有一定逻辑关系，在计算机中应用某种存储结构，并且封装了相应操作的数据元素集合。它包含三方面的内容，逻辑关系、存储关系及操作。不同种类的数据结构适合于不同种类的应用，而部分甚至专门用于特定的作业任务。",
     url: "https://agoodbook.github.io/data-structurer/",
     icon: DataStructureSvg,
+  },
+  {
+    title: "持续集成",
+    smallTitle:
+      "持续集成（Continuous Integration，CI）是一种软件开发实践，通过自动化构建、测试和集成代码的流程，使开发人员能够频繁地提交代码，并确保新代码与主干分支的集成是持续且可靠的，从而提高开发效率、减少错误并提高代码质量。",
+    url: "https://agoodbook.github.io/continuous-integration/",
+    icon: CISvg,
   },
 ];
 

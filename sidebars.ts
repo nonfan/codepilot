@@ -13,6 +13,11 @@ const sidebars: SidebarsConfig = {
       label: "指南",
     },
     {
+      type: "doc",
+      id: "actions",
+      label: "Actions自动化",
+    },
+    {
       type: "category",
       label: "前端插件库",
       collapsed: false,
