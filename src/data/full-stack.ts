@@ -17,6 +17,7 @@ import DataStructureSvg from "@site/src/assets/icons/DataStructureSvg";
 import RustSvg from "@site/src/assets/icons/RustSvg";
 import GoSvg from "@site/src/assets/icons/GoSvg";
 import CISvg from "@site/src/assets/icons/CISvg";
+import KotlinSvg from "@site/src/assets/icons/KotlinSvg";
 
 /**
  * 书中自有黄金屋
@@ -177,5 +178,12 @@ export const ProgramLanguage: Navigations = [
       "Go（又称Golang）是由Google开发的开源编程语言，以简洁、高效和并发支持为特点。它具有清晰的语法、内置并发机制和自动垃圾回收，适用于构建高性能、可维护的软件。Go的快速编译、跨平台支持和适用于分布式系统的特性使其在云计算和网络编程领域广受欢迎。",
     url: "https://agoodbook.github.io/go/",
     icon: GoSvg,
+  },
+  {
+    title: "kotlin",
+    smallTitle:
+      "Kotlin是由JetBrains公司开发的现代编程语言，其简洁的语法、空安全性、与Java的完美互操作性、扩展函数、函数式编程支持以及协程等特性，使其成为一种强大而灵活的编程语言，广泛用于Android应用开发以及各类企业级应用程序的构建。有 Kotlin/JS 插件的 Kotlin 可以用于编写客户端和服务器端的 JavaScript 应用程序。",
+    url: "https://agoodbook.github.io/kotlin/",
+    icon: KotlinSvg,
   },
 ];

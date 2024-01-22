@@ -25,9 +25,10 @@
   --nprogress-bg: var(--ifm-color-primary);
   --code-block-bg: #f6f8fa;
   --border: #d9d9d9;
-  --feedback-btn-bg: #fff;
-  --feedback-btn-color: #2a2929;
-  --feedback-btn-border: #ebebeb;
+  --feedback-bg: #fff;
+  --feedback-border: #d9d9d9;
+  --feedback-caret-color: var(--ifm-color-primary);
+  --feedback-shadow: 0 0 1px 1px var(--ifm-color-primary);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -46,9 +47,10 @@
   --nprogress-bg: var(--ifm-color-primary);
   --code-block-bg: #282a36;
   --border: #686868;
-  --feedback-btn-bg: #090a11;
-  --feedback-btn-color: #f5f6f7;
-  --feedback-btn-border: #242424;
+  --feedback-bg: #090a11;
+  --feedback-border: #242526;
+  --feedback-caret-color: #fff;
+  --feedback-shadow: 0 0 1px 1px #fff;
 }
 
 /* Antd组件变量 */
@@ -73,6 +75,12 @@
 @media screen and (min-width: 768px) {
   .custom-search .DocSearch {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .custom-feedback {
+    display: none;
   }
 }
 
@@ -144,4 +152,99 @@
 
 code {
   padding: 0 5px;
+}
+
+.navbar__link,.navbar__item {
+  white-space: nowrap;
+}
+
+/*自定义反馈按钮*/
+.custom-feedback {
+  position: relative;
+}
+
+.custom-feedback button {
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--feedback-border);
+  padding: 0 10px;
+  background-color: var(--feedback-bg);
+  font-weight: bolder;
+}
+
+.custom-feedback .send-container {
+  display: none;
+  width: 300px;
+  min-height: 180px;
+  border: 1px solid var(--feedback-border);
+  position: absolute;
+  top: 45px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: var(--feedback-bg);
+  padding: 0 5px;
+}
+
+.custom-feedback .send-container .email,
+.custom-feedback .send-container .content {
+  height: 40px;
+  border-radius: 5px;
+  margin: 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--feedback-border);
+}
+
+.custom-feedback .send-container .email input,
+.custom-feedback .send-container .content textarea {
+  background-color: var(--feedback-bg);
+}
+
+.custom-feedback .send-container .email input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.custom-feedback .send-container .content {
+  height: 100px;
+}
+
+.custom-feedback .send-container .content textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  font-family: "微软雅黑", Arial, sans-serif;
+}
+
+.custom-feedback .send-container .email input:focus,.custom-feedback .send-container .content textarea:focus {
+  box-shadow: var(--feedback-shadow);
+  caret-color: var(--feedback-caret-color);
+}
+
+.custom-feedback .send-container footer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: end;
+  margin-bottom: 5px;
+}
+
+.custom-feedback .send-container footer button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.active .send-container {
+  display: block;
 }

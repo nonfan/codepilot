@@ -103,7 +103,6 @@ config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "AGoodBook", // 导航上站点名称
-      hideOnScroll: true,
       logo: {
         alt: "AGoodBook", //  站点 logo 文字替换
         src: "img/logo.svg", //   站点 logo  链接
@@ -118,14 +117,34 @@ config = {
         { to: "docs/frontend", label: "前端", position: "left" },
         { to: "docs/backend", label: "后端", position: "left" },
         { to: "docs/full-stack", label: "全栈", position: "left" },
-        { to: "docs/up-projects", label: "创意工坊", position: "right" },
-        { to: "docs/storeroom", label: "杂物库", position: "right" },
-        //   right
         {
           type: "search",
           position: "left",
           className: "custom-search",
         },
+        {
+          type: "html",
+          position: "right",
+          value: `
+          <button>Give Feedback</button>
+          <div class="send-container">
+            <div class="email">
+              <input type="email" placeholder="您的邮箱"/>
+            </div>
+            <div class="content">
+              <textarea placeholder="您反馈什么?"></textarea>
+            </div>
+            <footer>
+              <button class="send-btn">发送</button>
+            </footer>
+          </div>
+          `,
+          className: "custom-feedback",
+        },
+        //   right
+        { to: "docs/up-projects", label: "创意工坊", position: "right" },
+        { to: "docs/storeroom", label: "杂物库", position: "right" },
+
         {
           type: "docsVersionDropdown",
           position: "right",

@@ -14,7 +14,6 @@ export default function Poetry() {
         if (!data.poetry) {
           return handleRandomPoetry();
         }
-
         setInfo(data);
         sessionStorage.setItem(
           "footer-word",
