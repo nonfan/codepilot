@@ -127,17 +127,18 @@ config = {
           position: "right",
           value: `
           <button>Give Feedback</button>
-          <div class="send-container">
+          <form class="send-container">
             <div class="email">
-              <input type="email" placeholder="您的邮箱"/>
+              <input id="feedback-email" type="email" placeholder="您的邮箱"/>
             </div>
             <div class="content">
-              <textarea placeholder="您反馈什么?"></textarea>
+              <textarea id="feedback-content" placeholder="您反馈什么?"></textarea>
             </div>
+            <div class="tips"></div>
             <footer>
-              <button class="send-btn">发送</button>
+              <button class="send-btn" onclick="event.preventDefault()">发送</button>
             </footer>
-          </div>
+          </>
           `,
           className: "custom-feedback",
         },
