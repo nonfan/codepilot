@@ -241,7 +241,7 @@ code {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.custom-feedback .send-container footer .icons {
+.custom-feedback .send-container footer .emoji-container {
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -249,7 +249,7 @@ code {
   color: red;
 }
 
-.custom-feedback .send-container footer .icons img {
+.custom-feedback .send-container footer .emoji-container img {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -257,11 +257,11 @@ code {
   border-radius: 50%;
 }
 
-.icon-active {
+.emoji-active {
   background-color: var(--ifm-color-primary);
 }
 
-.custom-feedback .send-container footer .icons img:hover {
+.custom-feedback .send-container footer .emoji-container img:hover {
   background-color: var(--ifm-color-primary);
 }
 
@@ -271,9 +271,6 @@ code {
   cursor: pointer;
 }
 
-.active .send-container {
-  display: block;
-}
 .custom-feedback .tips {
   font-size: 12px;
   color: #f55b5b;

@@ -135,11 +135,11 @@ config = {
             </div>
             <div class="tips"></div>
             <footer>
-              <div class="icons">
-                <img src="/icons/happy.svg" data-emoji="happy" width="24" height="24">
-                <img src="/icons/normal.svg" data-emoji="normal" width="24" height="24">
-                <img src="/icons/sad.svg" data-emoji="sad" width="24" height="24">
-                <img src="/icons/angry.svg" data-emoji="angry" width="24" height="24">
+              <div class="emoji-container">
+                <img src="/icons/happy.svg" data-emoji="happy" width="24" height="24" alt="happy"/>
+                <img src="/icons/normal.svg" data-emoji="normal" width="24" height="24" alt="normal"/>
+                <img src="/icons/sad.svg" data-emoji="sad" width="24" height="24" alt="sad"/>
+                <img src="/icons/angry.svg" data-emoji="angry" width="24" height="24" alt="angry"/>
               </div>
               <button class="send-btn" onclick="event.preventDefault()">发送</button>
             </footer>
