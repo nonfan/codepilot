@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { MouseEvent, useEffect } from "react";
 
 // 默认实现，你可以自定义
 export default function Root({ children }) {
@@ -12,7 +12,9 @@ export default function Root({ children }) {
       const content = document.getElementById(
         "feedback-content",
       ) as HTMLTextAreaElement;
+      let emoji = null;
       const tip = document.querySelector(".custom-feedback .tips");
+      const icons = document.querySelector(".custom-feedback .icons");
 
       // TODO
       if (!feedback) {
@@ -34,12 +36,33 @@ export default function Root({ children }) {
           return;
         }
 
-        console.log(email.value, content.value);
+        if (!emoji) {
+          tip.innerHTML = "请选择一种表情";
+          return;
+        }
+
+        console.log(email.value, content.value, emoji);
+      });
+
+      icons.addEventListener("click", (e: any) => {
+        Array.from(icons.children).map((item) => {
+          item.classList.remove("icon-active");
+        });
+        if (e.target instanceof HTMLImageElement) {
+          e.target.classList.add("icon-active");
+          emoji = e.target.dataset.emoji;
+        }
       });
 
       window.addEventListener("click", (event: any) => {
         if (!feedback.contains(event.target)) {
           feedback.classList.remove("active");
+          email.value = "";
+          content.value = "";
+          emoji = null;
+          Array.from(icons.children).map((item) => {
+            item.classList.remove("icon-active");
+          });
         }
       });
     }

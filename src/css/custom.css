@@ -184,18 +184,18 @@ code {
   left: 50%;
   transform: translate(-50%, 0);
   background-color: var(--feedback-bg);
-  padding: 0 5px;
 }
 
 .custom-feedback .send-container .email,
 .custom-feedback .send-container .content {
   height: 40px;
   border-radius: 5px;
-  margin: 4px 0;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--feedback-border);
+
 }
 
 .custom-feedback .send-container .email input,
@@ -235,9 +235,34 @@ code {
 .custom-feedback .send-container footer {
   display: flex;
   align-items: center;
-  height: 40px;
-  justify-content: end;
-  margin-bottom: 5px;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.custom-feedback .send-container footer .icons {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: red;
+}
+
+.custom-feedback .send-container footer .icons img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.icon-active {
+  background-color: var(--ifm-color-primary);
+}
+
+.custom-feedback .send-container footer .icons img:hover {
+  background-color: var(--ifm-color-primary);
 }
 
 .custom-feedback .send-container footer button {
@@ -245,11 +270,12 @@ code {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .active .send-container {
   display: block;
 }
 .custom-feedback .tips {
   font-size: 12px;
-  color: red;
+  color: #f55b5b;
   padding: 5px 10px;
 }

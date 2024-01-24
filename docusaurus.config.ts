@@ -1,7 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-
 const username: string = "agoodbook";
 const repo: string = "agoodbook.github.io";
 let config: Config;
@@ -136,9 +135,15 @@ config = {
             </div>
             <div class="tips"></div>
             <footer>
+              <div class="icons">
+                <img src="/icons/happy.svg" data-emoji="happy" width="24" height="24">
+                <img src="/icons/normal.svg" data-emoji="normal" width="24" height="24">
+                <img src="/icons/sad.svg" data-emoji="sad" width="24" height="24">
+                <img src="/icons/angry.svg" data-emoji="angry" width="24" height="24">
+              </div>
               <button class="send-btn" onclick="event.preventDefault()">发送</button>
             </footer>
-          </>
+          </form>
           `,
           className: "custom-feedback",
         },
