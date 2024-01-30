@@ -15,7 +15,7 @@ export default function Poetry() {
           return handleRandomPoetry();
         }
         setInfo(data);
-        sessionStorage.setItem(
+        localStorage.setItem(
           "footer-word",
           JSON.stringify({ ...data, updateAt: Date.now() }),
         );
@@ -26,7 +26,7 @@ export default function Poetry() {
   }
 
   function handleIsRefreshPoetry() {
-    const item = sessionStorage.getItem("footer-word");
+    const item = localStorage.getItem("footer-word");
     if (!item) {
       return handleRandomPoetry();
     }
