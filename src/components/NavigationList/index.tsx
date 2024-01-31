@@ -63,7 +63,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
   ]);
 
   const { show } = useContextMenu({
-    id: url,
+    id: smallTitle,
   });
 
   function handleContextMenu(event: any) {
@@ -155,7 +155,14 @@ function NavBar(props: { navigationItem: NavigationItem }) {
         overlayClassName="navbar-tooltip"
       >
         <div className="box" onContextMenu={handleContextMenu}>
-          <a href={url} target="_blank" className="content border">
+          <a
+            href={url}
+            onClick={(e) => {
+              if (url === "#") e.preventDefault();
+            }}
+            target="_blank"
+            className="content border"
+          >
             <div className="navbar-icon">{renderIcon()}</div>
             <div className="desc">
               <div className="title color">{title}</div>
@@ -163,7 +170,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
             </div>
           </a>
 
-          <Menu id={url} animation="scale">
+          <Menu id={smallTitle} animation="scale">
             {[...contextMenu, ...commonMenu].map((item) => {
               return (
                 <Item
