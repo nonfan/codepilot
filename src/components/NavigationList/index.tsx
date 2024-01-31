@@ -51,7 +51,7 @@ function NavBar(props: { navigationItem: NavigationItem }) {
       title: "简介",
       icon: "Ctrl+E",
       action: "see-to-desc",
-      keyMatcher: function (event) {
+      keyMatcher: function (event: any) {
         return event.key === "e" && event.ctrlKey;
       },
     },
@@ -105,6 +105,16 @@ function NavBar(props: { navigationItem: NavigationItem }) {
     if (item.action === "other") {
       console.log("其它操作");
       return;
+    }
+
+    if (item.action === "download") {
+      const aElement = document.createElement("a");
+      // 设置下载链接的属性
+      aElement.href = item.url;
+      aElement.download = item.meta.filename;
+      document.body.appendChild(aElement);
+      aElement.click();
+      document.body.removeChild(aElement);
     }
   };
 
@@ -187,7 +197,7 @@ export default function NavigationList(props: Props) {
             <NavTitle title={title} />
             <div className="navigator-container">
               {dataSource.map((item) => {
-                return <NavBar key={item.url} navigationItem={item} />;
+                return <NavBar key={item.url} navigationItem={item}></NavBar>;
               })}
             </div>
           </>

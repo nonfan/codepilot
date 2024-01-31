@@ -148,6 +148,7 @@ config = {
           className: "custom-feedback",
         },
         //   right
+        { to: "docs/books", label: "藏书阁", position: "right" },
         { to: "docs/up-projects", label: "创意工坊", position: "right" },
         { to: "docs/storeroom", label: "杂物库", position: "right" },
 

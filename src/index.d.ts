@@ -11,8 +11,16 @@ export interface ContextMenu {
   url?: string;
   icon?: React.FC | string;
   showTip?: boolean;
-  action: "see-to-website" | "see-to-desc" | "open-setting" | "other";
+  action:
+    | "see-to-website"
+    | "see-to-desc"
+    | "open-setting"
+    | "other"
+    | "download";
   keyMatcher?: (e: KeyboardEvent) => boolean;
+  meta?: {
+    [key: string]: any;
+  };
 }
 
 export type NavigationItem = {
