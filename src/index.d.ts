@@ -26,7 +26,7 @@ export interface ContextMenu {
 export type NavigationItem = {
   title: string;
   smallTitle: string;
-  url: string;
+  url: string | boolean;
   icon: React.FC | string;
   children?: Children[];
   officialWebsiteUrl?: string;

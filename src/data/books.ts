@@ -6,7 +6,7 @@ export const JavaScriptBooks: Navigations = [
     title: "JavaScript高级程序设计",
     smallTitle:
       "《JavaScript高级程序设计》是一本由经验丰富的前端工程师Nicholas C. Zakas编写的经典指南，全面涵盖JavaScript语言的各个方面，包括语法、DOM操作、性能优化等，通过实际示例和案例帮助读者深入理解并应用于实际开发。",
-    url: require("@site/static/books/javascript1.pdf").default,
+    url: false,
     icon: JavaScriptSvg,
     contextMenu: [
       {
