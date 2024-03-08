@@ -20,7 +20,6 @@ import DaySvg from "@site/src/assets/icons/DaySvg";
 import GSAPSvg from "@site/src/assets/icons/GSAPSvg";
 import HttpSvg from "@site/src/assets/icons/HttpSvg";
 import AxiosSvg from "@site/src/assets/icons/AxiosSvg";
-import FetchSvg from "@site/src/assets/icons/FetchSvg";
 import JQuerySvg from "@site/src/assets/icons/JQuerySvg";
 import SWRSvg from "@site/src/assets/icons/SWRSvg";
 import JestSvg from "@site/src/assets/icons/JestSvg";
@@ -53,7 +52,6 @@ import YarnSvg from "@site/src/assets/icons/YarnSvg";
 import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
 import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
 import WebAssemblySvg from "@site/src/assets/icons/WebAssemblySvg";
-import WebSocketSvg from "@site/src/assets/icons/WebSocketSvg";
 import SocketIoSvg from "@site/src/assets/icons/SocketIoSvg";
 
 export const ThreeMusketeers: Navigations = [
@@ -222,13 +220,6 @@ export const HttpRequest: Navigations = [
       "Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中。 它是 isomorphic 的(即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js http 模块, 而在客户端 (浏览端) 则使用 XMLHttpRequests。",
     url: "https://agoodbook.github.io/axios/",
     icon: AxiosSvg,
-  },
-  {
-    title: "Fetch",
-    smallTitle:
-      "Fetch 是一种用于在浏览器中进行网络请求的现代 API。它提供了一种更强大和灵活的方式来发起 HTTP 请求，替代了传统的 XMLHttpRequest。Fetch API 使用 Promise 对象，使得异步代码更加清晰和易于处理。",
-    url: "https://agoodbook.github.io/fetch/",
-    icon: FetchSvg,
   },
   {
     title: "JQuery-Http",
@@ -519,13 +510,6 @@ export const ExploreFrontendTechnologies: Navigations = [
  * WebSocket实时通讯框架
  */
 export const RealTimeCommunicationFrame: Navigations = [
-  {
-    title: "WebSockets",
-    smallTitle:
-      "原生的WebSockets API，可以直接在现代浏览器中使用，提供实时双向通信的能力。",
-    url: "https://agoodbook.github.io/websockets/",
-    icon: WebSocketSvg,
-  },
   {
     title: "Socket.io",
     smallTitle:
