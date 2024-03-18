@@ -1,8 +1,8 @@
 import { ColorPicker, Slider } from "antd";
-import MainComponent from "@site/src/components/CommonComponents/MainComponent";
 import React from "react";
+import AntdMainComponent from "@site/src/components/MainComponent";
 
-function NProgressStyle() {
+function Container() {
   function setNProgressBgColor(value: string) {
     document.documentElement.style.setProperty("--nprogress-bg", value);
   }
@@ -21,7 +21,7 @@ function NProgressStyle() {
   }
 
   return (
-    <MainComponent>
+    <AntdMainComponent>
       <div className="title">全局样式配置，请点击播放按钮查看效果。</div>
       <div style={{ display: "flex", alignItems: "center" }}>
         <span>背景色: &nbsp;</span>
@@ -36,8 +36,8 @@ function NProgressStyle() {
         <span>进度条高度: </span>
         <Slider defaultValue={5} onChange={setHeight} />
       </div>
-    </MainComponent>
+    </AntdMainComponent>
   );
 }
 
-export default NProgressStyle;
+export default Container;
