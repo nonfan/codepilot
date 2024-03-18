@@ -2,7 +2,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import { ConfigProvider } from "antd";
 import "./main.css";
 
-function Index(props: { children: any }) {
+function AntdMainComponent(props: { children: any }) {
   return (
     <BrowserOnly>
       {() => (
@@ -21,4 +21,4 @@ function Index(props: { children: any }) {
   );
 }
 
-export default Index;
+export default AntdMainComponent;

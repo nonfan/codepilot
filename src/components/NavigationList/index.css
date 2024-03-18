@@ -1,0 +1,169 @@
+@import "right-menu.theme.css";
+
+:root {
+  --border-color: #ececec;
+  --navigation-bg: #fff;
+  --tooltip-color-bg: #fff;
+  --tooltip-color: #2c2b2b;
+}
+
+[data-theme='dark'] {
+  --border-color: #282828;
+  --navigation-bg: #2c2e2f;
+  --tooltip-color-bg: #2c2e2f;
+  --tooltip-color: #a0a1a1;
+}
+
+/*导航类别样式*/
+.navigation-bar-category {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.navigation-bar-category svg {
+  margin-right: 10px;
+}
+
+/*结束线*/
+
+/*导航项容器*/
+.navigation-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+/*结束线*/
+
+/*单个导航项*/
+
+.navbar-tooltip .ant-tooltip-inner {
+  color: var(--tooltip-color) !important;
+  background-color: var(--tooltip-color-bg);
+}
+
+.navbar-tooltip .ant-tooltip-arrow:after, .navbar-tooltip .ant-tooltip-arrow:before {
+  background-color: var(--tooltip-color-bg);
+}
+
+
+.navigation .color {
+  color: var(--color);
+}
+
+.navigation .content {
+  background-color: var(--navigation-bg);
+  border: 1px solid var(--border-color);
+}
+
+.navigation a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navigation .content {
+  transition: transform 0.2s ease;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 110px;
+}
+
+.navigation .navbar-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.navigation .desc {
+  width: calc(100% - 70px);
+}
+
+.navigation .title {
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navigation .small {
+  font-size: 12px;
+  color: #a0a1a1;
+}
+
+.navigation:hover .content {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 76, 163, 0.1);
+}
+
+.navigation:hover .navbar-icon {
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+}
+
+/*结束线*/
+
+/*4个占满*/
+@media screen and (min-width: 997px) {
+  .navigation {
+    width: calc(25% - 15px); /* 每个div宽度为25%，减去边距的宽度 */
+    margin: 10px;
+  }
+
+  .navigation:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+
+  .navigation:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+}
+
+/*3个占满*/
+@media screen and (min-width: 769px) and (max-width: 996px) {
+  .navigation {
+    width: calc(33.33% - 13.33px);
+    margin: 10px;
+  }
+
+  .navigation:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+
+  .navigation:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+
+/*2个占满*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navigation {
+    width: calc(50% - 10px);
+    margin: 10px;
+  }
+
+  .navigation:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+
+  .navigation:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+}
+
+/*1个占满*/
+@media screen and (max-width: 480px) {
+  .navigation {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

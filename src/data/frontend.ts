@@ -45,10 +45,6 @@ import ReactNativeSvg from "@site/src/assets/icons/ReactNativeSvg";
 import FlutterSvg from "@site/src/assets/icons/FlutterSvg";
 import UniAppSvg from "@site/src/assets/icons/UniAppSvg";
 import WechatMiniSvg from "@site/src/assets/icons/WechatMiniSvg";
-import AntDesignSvg from "@site/src/assets/icons/AntDesignSvg";
-import ElementUiSvg from "@site/src/assets/icons/ElementUiSvg";
-import NpmSvg from "@site/src/assets/icons/NpmSvg";
-import YarnSvg from "@site/src/assets/icons/YarnSvg";
 import WebRTCSvg from "@site/src/assets/icons/WebRTCSvg";
 import GraphQLSvg from "@site/src/assets/icons/GraphQLSvg";
 import WebAssemblySvg from "@site/src/assets/icons/WebAssemblySvg";
@@ -66,7 +62,7 @@ export const ThreeMusketeers: Navigations = [
   {
     title: "CSS",
     smallTitle:
-      "CSS，即层叠样式表（Cascading NProgressStyle Sheets），是一种用于描述HTML或XML（包括SVG或XHTML等XML方言）文档展示样式的语言。",
+      "CSS，即层叠样式表（Cascading Index Sheets），是一种用于描述HTML或XML（包括SVG或XHTML等XML方言）文档展示样式的语言。",
     url: "https://agoodbook.github.io/css/",
     icon: CssSvg,
     officialWebsiteUrl: "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
@@ -436,46 +432,6 @@ export const MobileEndFrame: Navigations = [
       "微信小程序是一种轻量级、快速开发的应用形式，它可以在微信内直接运行，无需用户下载安装。微信小程序提供了一套完整的开发框架和工具，开发者可以使用HTML、CSS、JavaScript等技术进行开发",
     url: "https://agoodbook.github.io/wechat-mini-program/",
     icon: WechatMiniSvg,
-  },
-];
-
-/**
- * UI组件库
- */
-export const UIComponentsLibrary: Navigations = [
-  {
-    title: "Ant Design",
-    smallTitle:
-      "Ant Design 是一套由阿里巴巴（Alibaba）前端团队开发的企业级UI设计语言和React组件库。它提供了一套完整的设计规范和React组件，用于构建现代化、美观、易用的Web应用程序。Ant Design的目标是通过提供一致的设计语言和可复用的React组件，简化企业级应用程序的开发流程。",
-    url: "https://agoodbook.github.io/ant-design/",
-    icon: AntDesignSvg,
-  },
-  {
-    title: "ElementUi",
-    smallTitle:
-      "Element UI 是一套基于 Vue.js 的开源 UI 框架，提供了一系列丰富的可复用组件，用于构建现代化的 Web 应用程序。它是饿了么（Eleme）前端团队推出的项目，目的是为 Vue.js 开发者提供一套符合设计规范、易于使用和高度可定制的 UI 组件库。",
-    url: "https://agoodbook.github.io/element-ui/",
-    icon: ElementUiSvg,
-  },
-];
-
-/**
- * 包管理器
- */
-export const PackageManager: Navigations = [
-  {
-    title: "NPM",
-    smallTitle:
-      "npm（Node Package Manager）是用于Node.js平台的包管理工具。它是一个强大的工具，用于查找、安装、分享和管理JavaScript代码的包或模块。npm是Node.js的默认包管理器，随同Node.js一同安装。",
-    url: "https://agoodbook.github.io/npm/",
-    icon: NpmSvg,
-  },
-  {
-    title: "Yarn",
-    smallTitle:
-      "Yarn 是一个用于管理 JavaScript 依赖关系的包管理工具，它提供了与 npm 类似的功能，但在某些方面进行了改进。Yarn 的目标是提供更快、可靠和安全的依赖管理工具。",
-    url: "https://agoodbook.github.io/yarn/",
-    icon: YarnSvg,
   },
 ];
 

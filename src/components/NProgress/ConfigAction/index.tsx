@@ -1,12 +1,12 @@
 import NProgress from "@site/src/utils/nprogress";
 import { Button, Divider, InputNumber, Space, Switch, Tag } from "antd";
-import MainComponent from "@site/src/components/CommonComponents/MainComponent";
 import React, { useState } from "react";
+import AntdMainComponent from "@site/src/components/MainComponent";
 function ConfigAction() {
   const [isStarted, setIsStarted] = useState<boolean | null>();
 
   return (
-    <MainComponent>
+    <AntdMainComponent>
       <div className="title">全局配置操作按钮，请点击播放按钮查看效果。</div>
       <Space split={<Divider type="vertical" />} wrap>
         <Switch
@@ -39,7 +39,7 @@ function ConfigAction() {
           </Tag>
         </Space>
       </Space>
-    </MainComponent>
+    </AntdMainComponent>
   );
 }
 
