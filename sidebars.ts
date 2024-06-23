@@ -15,10 +15,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: "generated-index", // 生成菜单列表
       },
-      items: [
-        { id: "plugin-library/nprogress", label: "进度条", type: "doc" },
-        "plugin-library/rich-text-editor",
-      ],
+      items: ["plugin-library/rich-text-editor"],
     },
   ],
 };

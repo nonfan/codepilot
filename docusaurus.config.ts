@@ -2,17 +2,17 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-const username: string = "agoodbook";
-const repo: string = "agoodbook.github.io";
+const username: string = "nonfan";
+const repo: string = "nonfan.github.io";
 
 let config: Config = {
-  title: "AGoodBook",
+  title: "CodePilot",
   tagline: "书山有路勤为径，学海无涯苦作舟",
   favicon: "img/favicon.ico",
   trailingSlash: true,
 
-  url: `https://agoodbook.github.io/`,
-  baseUrl: "/",
+  url: `https://nonfan.github.io/`,
+  baseUrl: "/codepilot",
 
   organizationName: username,
   projectName: repo,
@@ -70,10 +70,10 @@ let config: Config = {
     },
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "AGoodBook",
+      title: "CodePilot",
       logo: {
-        alt: "AGoodBook",
-        src: "img/logo.svg",
+        alt: "CodePilot",
+        src: "../img/logo.svg",
       },
       items: [
         {
