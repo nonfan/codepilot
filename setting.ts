@@ -6,9 +6,9 @@ export const logoSrcDark: string = "./images/logoDark.svg";
 export const favicon: string = "./images/logoDark.svg";
 
 export const algolia = {
-  appId: "",
-  apiKey: "",
-  indexName: "",
+  appId: "xx",
+  apiKey: "xx",
+  indexName: "xx",
   searchParameters: {
     facetFilters: ["language:zh-CN", "version:current"],
   },
