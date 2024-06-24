@@ -45,10 +45,10 @@ function Navigation(props: { navigationItem: NavigationItem }) {
     title,
     smallTitle,
     icon,
-    url,
     contextMenu = [],
     officialWebsiteUrl,
   } = props.navigationItem;
+  const url = getCompleteUrl(props.navigationItem.url);
 
   const [isShowDesc, setIsShowDesc] = useState(false);
 
@@ -153,9 +153,9 @@ function Navigation(props: { navigationItem: NavigationItem }) {
       >
         <div className="navigation" onContextMenu={handleContextMenu}>
           <a
-            href={getCompleteUrl(url)}
+            href={url}
             onClick={(e) => {
-              if (!url) {
+              if (!props.navigationItem.url) {
                 e.preventDefault();
                 message.info("暂无文档");
               }
