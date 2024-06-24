@@ -27,6 +27,10 @@ let config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  i18n: {
+    defaultLocale: "zh-CN",
+    locales: ["zh-CN"],
+  },
   plugins: ["docusaurus-plugin-sass"],
   presets: [
     [
