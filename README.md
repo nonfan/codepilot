@@ -1,9 +1,8 @@
-```plaintext
-    _      ____                    _  ____                 _    
-   / \    / ___|  ___    ___    __| || __ )   ___    ___  | | __
-  / _ \  | |  _  / _ \  / _ \  / _` ||  _ \  / _ \  / _ \ | |/ /
- / ___ \ | |_| || (_) || (_) || (_| || |_) || (_) || (_) ||   < 
-/_/   \_\ \____| \___/  \___/  \__,_||____/  \___/  \___/ |_|\_\
-                                                                
-```
-我为什么要写一本书，这本书是我的故事也是我生涯。我在记录给未来看。
+<div align="center">
+    <img src="static/images/readme.svg" alt="logo"><br><br>
+    <p>
+        <img alt="Static Badge" src="https://img.shields.io/badge/writer-MoFan-blue">
+        <img alt="Static Badge" src="https://img.shields.io/badge/docs-CodePilot-488359">
+        <img alt="Static Badge" src="https://img.shields.io/github/license/nonfan/codepilot">
+    </p>
+</div>

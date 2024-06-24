@@ -3,12 +3,13 @@ import { ContextMenu, NavigationItem, Navigations } from "@site/src";
 import TextSvg from "@site/src/assets/icons/TextSvg";
 import { Menu, Item, useContextMenu, RightSlot } from "react-contexify";
 import SettingSvg from "@site/src/assets/icons/SettingSvg";
-import { Tooltip } from "antd";
+import { message, Tooltip } from "antd";
 import { StyleProvider } from "@ant-design/cssinjs";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import WebSvg from "@site/src/assets/icons/WebSvg";
 import CategorySvg from "@site/src/assets/icons/CategorySvg";
 import "./index.css";
+import { getCompleteUrl } from "@site/src/utils";
 
 interface Props {
   dataSource: Navigations;
@@ -152,9 +153,12 @@ function Navigation(props: { navigationItem: NavigationItem }) {
       >
         <div className="navigation" onContextMenu={handleContextMenu}>
           <a
-            href={url}
+            href={getCompleteUrl(url)}
             onClick={(e) => {
-              if (url === "#") e.preventDefault();
+              if (!url) {
+                e.preventDefault();
+                message.info("暂无文档");
+              }
             }}
             target="_blank"
             className="content"
@@ -204,7 +208,10 @@ export default function NavigationList(props: Props) {
             <div className="navigation-list-container">
               {dataSource.map((item) => {
                 return (
-                  <Navigation key={item.url} navigationItem={item}></Navigation>
+                  <Navigation
+                    key={item.title}
+                    navigationItem={item}
+                  ></Navigation>
                 );
               })}
             </div>

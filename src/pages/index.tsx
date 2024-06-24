@@ -23,9 +23,9 @@ function HomepageHeader() {
             className={
               "button button--secondary button--lg" + " " + styles.link
             }
-            to="/docs"
+            to="/frontend"
           >
-            <HomepageStarted title="Get Started" direction="right" />
+            <HomepageStarted title="Ready to fly" direction="right" />
           </Link>
         </div>
       </div>

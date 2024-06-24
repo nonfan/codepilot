@@ -1,3 +1,5 @@
+import { username } from "@site/setting";
+
 function getRandomElements(arr: any[], num: number) {
   // 复制数组，以避免修改原始数组
   const shuffledArray = arr.slice();
@@ -12,4 +14,8 @@ function getRandomElements(arr: any[], num: number) {
   return shuffledArray.slice(0, num);
 }
 
-export { getRandomElements };
+function getCompleteUrl(url: string) {
+  return `https:${username}.github.io/${url}`;
+}
+
+export { getRandomElements, getCompleteUrl };
