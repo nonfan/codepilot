@@ -15,7 +15,7 @@ function getRandomElements(arr: any[], num: number) {
 }
 
 function getCompleteUrl(url: string) {
-  return `https:${username}.github.io/${url}`;
+  return `https://${username}.github.io/${url}`;
 }
 
 export { getRandomElements, getCompleteUrl };
